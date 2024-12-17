@@ -40,8 +40,8 @@ export default function Home() {
         </div>
 
         {/* Coming Soon Text */}
-        <div className="mt-10">
-          <span className="text-white text-2xl font-normal tracking-[.90em]">
+        <div className="mt-10 w-full text-center">
+          <span className="text-white text-2xl font-normal tracking-[.90em] inline-block">
             COMING SOON
           </span>
         </div>
