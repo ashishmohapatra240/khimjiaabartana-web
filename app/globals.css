@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --khimji-red: #BF1E2D;
-  --khimji-gold: #C7A12F;
+  --khimji-red: #bd1621;
+  --khimji-gold: #CBA20E;
 }
 
 body {
