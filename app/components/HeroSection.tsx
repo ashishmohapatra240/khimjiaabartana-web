@@ -3,7 +3,7 @@ import { archivo, notoSansOriya } from "../fonts";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#b81d18] h-screen px-6 sm:px-8 md:px-12 lg:px-16 py-8 flex flex-col items-start justify-start">
+    <section className="bg-[#aa030e] h-screen px-6 sm:px-8 md:px-12 lg:px-16 py-8 flex flex-col items-start justify-start">
       {/* Logos Section */}
       <div className="flex items-center justify-start gap-6 sm:gap-8 mb-12 sm:mb-16">
         <div className="relative w-32 sm:w-40 h-20 sm:h-24">
