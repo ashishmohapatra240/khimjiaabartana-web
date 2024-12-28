@@ -3,7 +3,7 @@ import { archivo, notoSansOriya } from "../fonts";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#bd1621] h-screen px-6 sm:px-8 md:px-12 lg:px-16 py-8 flex flex-col items-start justify-start">
+    <section className="bg-[#b81d18] h-screen px-6 sm:px-8 md:px-12 lg:px-16 py-8 flex flex-col items-start justify-start">
       {/* Logos Section */}
       <div className="flex items-center justify-start gap-6 sm:gap-8 mb-12 sm:mb-16">
         <div className="relative w-32 sm:w-40 h-20 sm:h-24">
@@ -46,7 +46,7 @@ export default function HeroSection() {
 
       {/* Button Section */}
       <button
-        className={`${archivo.className} mt-12 sm:mt-16 px-8 sm:px-10 md:px-12 py-3 sm:py-4 bg-khimji-gold text-khimji-red font-medium text-sm sm:text-base md:text-lg uppercase hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap`}
+        className={`${archivo.className} mt-12 sm:mt-16 px-8 sm:px-10 md:px-12 py-3 sm:py-4 bg-[#CBA20E] text-khimji-red font-medium text-sm sm:text-base md:text-lg uppercase hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap`}
       >
         Explore Khimji Aabartana 2025
       </button>
