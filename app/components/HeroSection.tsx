@@ -45,11 +45,12 @@ export default function HeroSection() {
       </div>
 
       {/* Button Section */}
-      <button
+      <a
+        href="/calendar"
         className={`${archivo.className} mt-12 sm:mt-16 px-8 sm:px-10 md:px-12 py-3 sm:py-4 bg-[#CBA20E] text-khimji-red font-medium text-sm sm:text-base md:text-lg uppercase hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap`}
       >
         Explore Khimji Aabartana 2025
-      </button>
+      </a>
     </section>
   );
 }
