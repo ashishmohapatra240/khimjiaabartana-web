@@ -1,8 +1,10 @@
 export type HolidayType = {
-  date: number;
+  date: string;
+  englishDate: number;
   festival: string;
   color: string;
 };
+
 
 export type SubhadinaType = {
   bibaha: number[];
@@ -10,13 +12,14 @@ export type SubhadinaType = {
 };
 
 export type DateDetailsType = {
-  details: string;
+  date: string;
+  significance: string;
 };
 
 export type MonthDataType = {
   holidays: HolidayType[];
   subhadina: SubhadinaType;
-  dateDetails: Record<number, DateDetailsType>;
+  dateDetails: DateDetailsType[];
   moonIcons: Record<number, string>;
 };
 
