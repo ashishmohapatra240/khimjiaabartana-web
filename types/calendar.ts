@@ -1,6 +1,7 @@
 export type HolidayType = {
   date: string;
   englishDate: number;
+  isoDate: string;
   festival: string;
   color: string;
 };
@@ -20,10 +21,8 @@ export type MonthDataType = {
   holidays: HolidayType[];
   subhadina: SubhadinaType;
   dateDetails: DateDetailsType[];
-  moonIcons: Record<number, string>;
+  moonIcons: MoonType;
 };
 
-export type MoonType = {
-  icon: string;
-};
+export type MoonType = Record<number, string>;
 
