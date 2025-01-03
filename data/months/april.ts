@@ -52,32 +52,142 @@ export const aprilData = {
         {
             date: "୦୧",
             englishDate: 1,
+            isoDate: "2025-04-01T00:00:00Z",
             festival: "ଉତ୍କଳ ଦିବସ - Utkala Dibasa",
             color: holidayColors[0]
         },
         {
             date: "୦୬",
             englishDate: 6,
+            isoDate: "2025-04-06T00:00:00Z",
             festival: "ଶ୍ରୀ ରାମ ନବମୀ - Shree Rama Nabami",
             color: holidayColors[1]
         },
         {
             date: "୧୪",
             englishDate: 14,
+            isoDate: "2025-04-14T00:00:00Z",
             festival: "ମହାବିଷୁବ ପଣା ସଂକ୍ରାନ୍ତି, ହନୁମାନ ଜୟନ୍ତୀ - Mahabishuba Sankranti",
             color: holidayColors[2]
         },
         {
             date: "୧୮",
             englishDate: 18,
+            isoDate: "2025-04-18T00:00:00Z",
             festival: "Good Friday",
             color: holidayColors[3]
         },
         {
             date: "୩୦",
             englishDate: 30,
+            isoDate: "2025-04-30T00:00:00Z",
             festival: "ଅକ୍ଷୟ ତୃତୀୟା - Akshaya Tritiya",
             color: holidayColors[0]
+        },
+        {
+            date: "୦୨",
+            englishDate: 2,
+            isoDate: "2025-04-02T00:00:00Z",
+            festival: "ଶ୍ରୀ ଦୁର୍ଗାଦେବ୍ୟୋ ପଞ୍ଚମାଦି କଳ୍ପାରମ୍ଭ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୩",
+            englishDate: 3,
+            isoDate: "2025-04-03T00:00:00Z",
+            festival: "ଶ୍ରୀମନ୍ଦିରେ ଚୈତ୍ର ଗୁଣ୍ଡିଚା ଯାତ୍ରା, ବାସନ୍ତୀକ ଶ୍ରୀ ଦୁର୍ଗାଦେବ୍ୟୋଃ ବିଲ୍ୱବରଣ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୪",
+            englishDate: 4,
+            isoDate: "2025-04-04T00:00:00Z",
+            festival: "ବାସନ୍ତୀକ ଶ୍ରୀ ଦୁର୍ଗାଦେବ୍ୟୋଃ ସପ୍ତମୀ ଓ ମହାଷ୍ଟମୀ ପୂଜା, ଶ୍ରୀ ଲିଙ୍ଗରାଜ ଦେବଙ୍କର ରଥ ପ୍ରତିଷ୍ଠା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୫",
+            englishDate: 5,
+            isoDate: "2025-04-05T00:00:00Z",
+            festival: "ଅଶୋକାଷ୍ଟମୀ, ଶ୍ରୀ ଶ୍ରୀ ଲିଙ୍ଗରାଜ ଦେବଙ୍କର ରଥଯାତ୍ରା, ଶ୍ରୀ ବାସନ୍ତୀଦୁର୍ଗା ଦେବ୍ୟୋଃ ମହାନବମୀ ପୂଜା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୭",
+            englishDate: 7,
+            isoDate: "2025-04-07T00:00:00Z",
+            festival: "ବାସନ୍ତୀକ ଦଶହରା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୮",
+            englishDate: 8,
+            isoDate: "2025-04-08T00:00:00Z",
+            festival: "କାମଦା ଏକାଦଶୀ ଉପବାସ, ସୀତା ବିବାହ, ହଳ ନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୦",
+            englishDate: 10,
+            isoDate: "2025-04-10T00:00:00Z",
+            festival: "ଅନଙ୍ଗ ତ୍ରୟୋଦතୀ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୧",
+            englishDate: 11,
+            isoDate: "2025-04-11T00:00:00Z",
+            festival: "ଶିବ ଓ ବିଷ୍ଣୁ ଦମନକ ଚତୁର୍ଦ୍ଦଶୀ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୨",
+            englishDate: 12,
+            isoDate: "2025-04-12T00:00:00Z",
+            festival: "ଚୈତ୍ର ପୂର୍ଣ୍ଣିମା, ହିଙ୍ଗୁଳା ଯାତ୍ରା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୩",
+            englishDate: 13,
+            isoDate: "2025-04-13T00:00:00Z",
+            festival: "ମାସାନ୍ତ, ବୈଶାଖ ବ୍ରତାରମ୍ଭ, ବର୍ଷ ଶେଷ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୦",
+            englishDate: 20,
+            isoDate: "2025-04-20T00:00:00Z",
+            festival: "ଶରଣ ଆରମ୍ଭ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୪",
+            englishDate: 24,
+            isoDate: "2025-04-24T00:00:00Z",
+            festival: "ବରୁଥିନୀ ଏକାଦଶ୭ୀ, ଶରଣ ଶେଷ, ହଳ ନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୬",
+            englishDate: 26,
+            isoDate: "2025-04-26T00:00:00Z",
+            festival: "ଶିବ ଚତୁର୍ଦ୍ଦଶୀ ଉପବାସ ଓ ବେଢ଼ା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୭",
+            englishDate: 27,
+            isoDate: "2025-04-27T00:00:00Z",
+            festival: "ରୁକ୍ମିଣୀ ଅମାବାସ୍ୟା, ସୂର୍ଯ୍ୟମହତି ସ୍ନାନ, ଚନ୍ଦ୍ରକ୍ଷୟ, ନିଶିପାଳନ ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୯",
+            englishDate: 29,
+            isoDate: "2025-04-29T00:00:00Z",
+            festival: "ଦ୍ଵିତୀୟାର ଚନ୍ଦ୍ର ଦର୍ଶନ",
+            color: holidayColors[4]
         }
     ] as HolidayType[],
 
@@ -86,9 +196,9 @@ export const aprilData = {
         brataGhara: [3, 7, 12, 17],
     } as SubhadinaType,
     moonIcons: {
-        1: 'Purnima',
-        14: 'Amavasya',
-        20: 'KrishnaPakshaEkadashi',
-        25: 'ShuklaPakshaEkadashi',
-    }
+        12: 'Purnima',
+        27: 'Amavasya',
+        24: 'KrishnaPakshaEkadashi',
+        8: 'ShuklaPakshaEkadashi',
+    },
 }; 

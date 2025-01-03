@@ -54,25 +54,133 @@ export const julyData = {
         {
             date: "୦୫",
             englishDate: 5,
+            isoDate: "2025-07-05T00:00:00Z",
             festival: "ବାହୁଡ଼ା ଯାତ୍ରା - Bahuda Jatra",
             color: holidayColors[0]
         },
         {
             date: "୨୪",
             englishDate: 24,
+            isoDate: "2025-07-24T00:00:00Z",
             festival: "ଚିତାଲାଗି ଅମାବାସ୍ୟା - Chitaalagi Amabasya",
             color: holidayColors[1]
+        },
+        {
+            date: "୦୧",
+            englishDate: 1,
+            isoDate: "2025-07-01T00:00:00Z",
+            festival: "ହେରା ପଞ୍ଚମୀ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୩",
+            englishDate: 3,
+            isoDate: "2025-07-03T00:00:00Z",
+            festival: "ପର୍ଶୁରାମାଷ୍ଟମୀ ଓ ନବମୀର ସନ୍ଧ୍ୟା ଦର୍ଶନ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୬",
+            englishDate: 6,
+            isoDate: "2025-07-06T00:00:00Z",
+            festival: "ହରିଶୟନ (ବଡ଼) ଏକାଦଶୀ ଉପବାସ, ରବିନାରାୟଣ ବ୍ରତ, ମହାପ୍ରଭୁଙ୍କ ରଥ ଉପରେ ସୁନାବେଶ, ମହରମ ପର୍ବ ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୭",
+            englishDate: 7,
+            isoDate: "2025-07-07T00:00:00Z",
+            festival: "ଗରୁଡ଼ ଶୟନୋତ୍ସବ, ଅଧରପଣା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୮",
+            englishDate: 8,
+            isoDate: "2025-07-08T00:00:00Z",
+            festival: "ଶ୍ରୀ ଜୀଉଙ୍କ ନୀଳାଦ୍ରୀ ବିଜେ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୯",
+            englishDate: 9,
+            isoDate: "2025-07-09T00:00:00Z",
+            festival: "ଶିବ ଶୟନ ଚତୁର୍ଦ୍ଦଶୀ ଓ ବେଢ଼ା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୦",
+            englishDate: 10,
+            isoDate: "2025-07-10T00:00:00Z",
+            festival: "ବ୍ୟାସ ଗୁରୁ ପୂର୍ଣ୍ଣିମା ଓ ଚନ୍ଦ୍ରପୂଜା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୧",
+            englishDate: 11,
+            isoDate: "2025-07-11T00:00:00Z",
+            festival: "ଶରଣ ଆରମ୍ଭ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୪",
+            englishDate: 14,
+            isoDate: "2025-07-14T00:00:00Z",
+            festival: "ଶ୍ରାବଣ ପ୍ରଥମ ସୋମବାର ଓ ବୋଲବମ ଆରମ୍ଭ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୫",
+            englishDate: 15,
+            isoDate: "2025-07-15T00:00:00Z",
+            festival: "ମନସା ପଞ୍ଚମୀ ଓ ଶରଣ ଶେଷ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୬",
+            englishDate: 16,
+            isoDate: "2025-07-16T00:00:00Z",
+            festival: "ଦକ୍ଷିଣାୟନ କର୍କଟ ସଂକ୍ରାନ୍ତି ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୧",
+            englishDate: 21,
+            isoDate: "2025-07-21T00:00:00Z",
+            festival: "କାମଦା ଏକାଦଶୀ, ଚକ୍ରବୁଲା ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୩",
+            englishDate: 23,
+            isoDate: "2025-07-23T00:00:00Z",
+            festival: "ଶିବ ଚତୁର୍ଦ୍ଦଶୀ ଓ ବେଢ଼ା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୬",
+            englishDate: 26,
+            isoDate: "2025-07-26T00:00:00Z",
+            festival: "ଦ୍ଵିତୀୟାରେ ଚନ୍ଦ୍ର ଦର୍ଶନ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୯",
+            englishDate: 29,
+            isoDate: "2025-07-29T00:00:00Z",
+            festival: "ଜାଗ୍ରଦଗୌରୀ ପଞ୍ଚମୀ",
+            color: holidayColors[4]
         }
     ] as HolidayType[],
-    
+
     subhadina: {
         bibaha: [2, 4, 7, 9, 11, 14, 16, 18],
         brataGhara: [2, 7, 11, 16],
     } as SubhadinaType,
     moonIcons: {
-        1: 'Purnima',
-        14: 'Amavasya',
-        20: 'KrishnaPakshaEkadashi',
-        25: 'ShuklaPakshaEkadashi',
+        1: 'ShuklaPakshaPratipada',
+        6: 'ShuklaPakshaEkadashi',
+        10: 'Purnima',
+        24: 'Amavasya',
+        29: 'KrishnaPakshaEkadashi',
     },
 }; 

@@ -55,36 +55,125 @@ export const januaryData = {
             date: "୦୧",
             englishDate: 1,
             festival: "ଇଂରାଜୀ ନୂତନ ବର୍ଷ - New Year Day",
-            color: holidayColors[0]
+            color: holidayColors[0],
+            isoDate: "2025-01-01T00:00:00Z"
         },
         {
             date: "୦୯",
             englishDate: 9,
             festival: "ଶାମ୍ବଦଶମୀ ଓ ସୁଦଶା ବ୍ରତ - Samba Dashami",
-            color: holidayColors[1]
+            color: holidayColors[1],
+            isoDate: "2025-01-09T00:00:00Z"
         },
         {
             date: "୧୪",
             englishDate: 14,
             festival: "ଉତ୍ତରାୟଣ ମକର ସଂକ୍ରାନ୍ତି - Makara Sankranti",
-            color: holidayColors[2]
+            color: holidayColors[2],
+            isoDate: "2025-01-14T00:00:00Z"
         },
         {
             date: "୨୬",
             englishDate: 26,
             festival: "ସାଧାରଣତନ୍ତ୍ର ଦିବସ - Republic Day",
-            color: holidayColors[3]
+            color: holidayColors[3],
+            isoDate: "2025-01-26T00:00:00Z"
+        },
+        // {
+        //     date: "୦୧",
+        //     englishDate: 1,
+        //     festival: "ଇଂରାଜୀ ନୂତନ ବର୍ଷ ସନ ୨୦୨୫ ମସିହା ପ୍ରବେଶ ଆରମ୍ବ, ଦ୍ଵିତୀୟାର ଚନ୍ଦ୍ର ଦର୍ଶନ, ଶରଣ ଆରମ୍ଭ",
+        //     color: "holidayColors[4]",
+        //     isoDate: "2025-01-01T00:00:00Z"
+        // },
+        {
+            date: "୦୫",
+            englishDate: 5,
+            festival: "ଶରଣ ଶେଷ",
+            color: "holidayColors[4]",
+            isoDate: "2025-01-05T00:00:00Z"
+        },
+        {
+            date: "୧୦",
+            englishDate: 10,
+            festival: "ପୁତ୍ରଦା ଏକାଦଶୀ ଉପବାସ ଓ ହଳ ନିଷେଧ",
+            color: "holidayColors[4]",
+            isoDate: "2025-01-10T00:00:00Z"
+        },
+        {
+            date: "୧୨",
+            englishDate: 12,
+            festival: "ସ୍ୱାମୀ ବିବେକାନନ୍ଦ ଜୟନ୍ତୀ, ଶିବଚତୁର୍ଦ୍ଦଶୀ ଉପବାସ ଓ ବେଢ଼ା ପରିକ୍ରମା",
+            color: "holidayColors[4]",
+            isoDate: "2025-01-12T00:00:00Z"
+        },
+        {
+            date: "୧୩",
+            englishDate: 13,
+            festival: "ପୌଷ ପୂର୍ଣ୍ଣିମା, ଚନ୍ଦ୍ର ପୂଜା, ମହୋଦଧି ଆରତୀ, ନବାଙ୍କ ବେଢ଼ା, ମାସାନ୍ତ",
+            color: "holidayColors[4]",
+            isoDate: "2025-01-13T00:00:00Z"
+        },
+        {
+            date: "୧୫",
+            englishDate: 15,
+            festival: "ପୁଷ୍ୟା ଭିଷେକ ଓ ରାଜା ଭିଷେକ",
+            color: "holidayColors[4]",
+            isoDate: "2025-01-15T00:00:00Z"
+        },
+        {
+            date: "୨୩",
+            englishDate: 23,
+            festival: "ନେତାଜୀ ସୁଭାଷ ଚନ୍ଦ୍ର ବୋଷ ଜୟନ୍ତୀ",
+            color: "holidayColors[4]",
+            isoDate: "2025-01-23T00:00:00Z"
+        },
+        {
+            date: "୨୫",
+            englishDate: 25,
+            festival: "ଷଟ୍ ତିଳା ଏକାଦଶୀ ଉପବାସ, ଓଳାଶୁଣୀ ମେଳା, ହଳ ନିଷେଧ",
+            color: "holidayColors[4]",
+            isoDate: "2025-01-25T00:00:00Z"
+        },
+        {
+            date: "୨୭",
+            englishDate: 27,
+            festival: "ରଟନ୍ତୀ କାଳୀକା ପୂଜା",
+            color: "holidayColors[4]",
+            isoDate: "2025-01-27T00:00:00Z"
+        },
+        {
+            date: "୨୮",
+            englishDate: 28,
+            festival: "ଶିବ ଚତୁର୍ଦ୍ଦଶୀ ଉପବାସ ଓ ବେଢ଼ା ପରିକ୍ରମା, ରଟନ୍ତୀ ଚତୁର୍ଦ୍ଦଶୀ, ଚନ୍ଦ୍ର କ୍ଷୟ, ନିଶିପାଳନ, ଶରଣ ଆରମ୍ଭ, ସବେ-ମେରାକ୍ (ପୂର୍ବରାତ୍ରି)",
+            color: "holidayColors[4]",
+            isoDate: "2025-01-28T00:00:00Z"
+        },
+        {
+            date: "୨୯",
+            englishDate: 29,
+            festival: "ତ୍ରିବେଣୀ ଅମାବାସ୍ୟା, ମା ବିରଜା ଦେବୀଙ୍କର ଜନ୍ମୋତ୍ସବ, ହଳ ନିଷେଧ",
+            color: "holidayColors[4]",
+            isoDate: "2025-01-29T00:00:00Z"
+        },
+        {
+            date: "୩୦",
+            englishDate: 30,
+            festival: "ଦ୍ଵିତୀୟାର ଚନ୍ଦ୍ର ଦର୍ଶନ ପୂଜା ଓ ଉପବାସ, ମହାତ୍ମାଗାନ୍ଧୀଙ୍କ ତିରୋଧାନ ଦିବସ",
+            color: "holidayColors[4]",
+            isoDate: "2025-01-30T00:00:00Z"
         }
     ] as HolidayType[],
+
 
     subhadina: {
         bibaha: [18, 19, 20, 21, 22, 24, 27, 30],
         brataGhara: [16, 31],
     } as SubhadinaType,
     moonIcons: {
-        1: 'Purnima',
-        14: 'Amavasya',
-        20: 'KrishnaPakshaEkadashi',
-        25: 'ShuklaPakshaEkadashi',
-    }
+        13: 'Purnima',
+        29: 'Amavasya',
+        25: 'KrishnaPakshaEkadashi',
+        10: 'ShuklaPakshaEkadashi',
+    },
 };

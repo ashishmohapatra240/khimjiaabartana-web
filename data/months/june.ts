@@ -55,36 +55,169 @@ export const juneData = {
             date: "୦୧",
             englishDate: 1,
             festival: "ଶୀତଳ ଷଷ୍ଠୀ - Sitala Sasti",
-            color: holidayColors[0]
+            color: holidayColors[0],
+            isoDate: "2025-06-01T00:00:00Z"
         },
         {
             date: "୧୧",
             englishDate: 11,
             festival: "ଦେବସ୍ନାନ ପୂର୍ଣ୍ଣିମା - Debasnana Purnima",
-            color: holidayColors[1]
+            color: holidayColors[1],
+            isoDate: "2025-06-11T00:00:00Z"
         },
         {
             date: "୧୪",
             englishDate: 14,
             festival: "ପ୍ରଥମ ରଜ - Pahili Raja",
-            color: holidayColors[2]
+            color: holidayColors[2],
+            isoDate: "2025-06-14T00:00:00Z"
         },
         {
             date: "୨୭",
             englishDate: 27,
             festival: "ଶ୍ରୀଗୁଣ୍ଡିଚା (ରଥଯାତ୍ରା) - Shree Gundicha (Ratha Jatra)",
-            color: holidayColors[3]
+            color: holidayColors[3],
+            isoDate: "2025-06-27T00:00:00Z"
+        },
+        // {
+        //     date: "୦୧",
+        //     englishDate: 1,
+        //     festival: "ଶୀତଳ ଷଷ୍ଠୀ, ଶ୍ରୀମନ୍ଦିରେ ଜଳକ୍ରୀଡ଼ା",
+        //     color: holidayColors[4],
+        //     isoDate: "2025-06-01T00:00:00Z"
+        // },
+        {
+            date: "୦୫",
+            englishDate: 5,
+            festival: "ଗଙ୍ଗା ଦଶହରା ଓ ସୁଦଶା ବ୍ରତ",
+            color: holidayColors[4],
+            isoDate: "2025-06-05T00:00:00Z"
+        },
+        {
+            date: "୦୬",
+            englishDate: 6,
+            festival: "ରୁକ୍ମିଣୀ ବିବାହ, ନିର୍ଜଳା ଏକାଦଶୀ ଉପବାସ ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4],
+            isoDate: "2025-06-06T00:00:00Z"
+        },
+        {
+            date: "୦୭",
+            englishDate: 7,
+            festival: "ଚମ୍ପକ ଦ୍ୱାଦଶୀ, ଇଦୁଜୁହା",
+            color: holidayColors[4],
+            isoDate: "2025-06-07T00:00:00Z"
+        },
+        {
+            date: "୦୯",
+            englishDate: 9,
+            festival: "ଶିବଚତୁର୍ଦ୍ଦଶୀ ଉପବାସ ଓ ବେଢ଼ା",
+            color: holidayColors[4],
+            isoDate: "2025-06-09T00:00:00Z"
+        },
+        {
+            date: "୧୦",
+            englishDate: 10,
+            festival: "ପୂର୍ଣ୍ଣିମାର ଚନ୍ଦ୍ରପୂଜା",
+            color: holidayColors[4],
+            isoDate: "2025-06-10T00:00:00Z"
+        },
+        {
+            date: "୧୨",
+            englishDate: 12,
+            festival: "ଅଲାରନାଥଙ୍କ ଦର୍ଶନ ଆରମ୍ଭ",
+            color: holidayColors[4],
+            isoDate: "2025-06-12T00:00:00Z"
+        },
+        // {
+        //     date: "୧୪",
+        //     englishDate: 14,
+        //     festival: "ଶରଣ ଆରମ୍ଭ, ମାସାନ୍ତ",
+        //     color: holidayColors[4],
+        //     isoDate: "2025-06-14T00:00:00Z"
+        // },
+        {
+            date: "୧୫",
+            englishDate: 15,
+            festival: "ମିଥୁନ (ରଜ) ସଂକ୍ରାନ୍ତି ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4],
+            isoDate: "2025-06-15T00:00:00Z"
+        },
+        {
+            date: "୧୬",
+            englishDate: 16,
+            festival: "ଭୂଦାହ, ଅଣସର ପଞ୍ଚମୀ",
+            color: holidayColors[4],
+            isoDate: "2025-06-16T00:00:00Z"
+        },
+        {
+            date: "୧୭",
+            englishDate: 17,
+            festival: "ବସୁମତୀ ସ୍ନାନ",
+            color: holidayColors[4],
+            isoDate: "2025-06-17T00:00:00Z"
+        },
+        {
+            date: "୧୮",
+            englishDate: 18,
+            festival: "ଶରଣ ଶେଷ",
+            color: holidayColors[4],
+            isoDate: "2025-06-18T00:00:00Z"
+        },
+        {
+            date: "୨୧",
+            englishDate: 21,
+            festival: "ଅଣସର ଦଶମୀ, ଖଳିଲାଗି ଏକାଦଶୀ ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4],
+            isoDate: "2025-06-21T00:00:00Z"
+        },
+        {
+            date: "୨୨",
+            englishDate: 22,
+            festival: "ଅଣସର ଦ୍ୱାଦଶୀ, ପଠାଣି ସାମନ୍ତଙ୍କ ତିରୋଧାନ ଦିବସ",
+            color: holidayColors[4],
+            isoDate: "2025-06-22T00:00:00Z"
+        },
+        {
+            date: "୨୩",
+            englishDate: 23,
+            festival: "ଅଣସର ତ୍ରୟୋଦଶୀ",
+            color: holidayColors[4],
+            isoDate: "2025-06-23T00:00:00Z"
+        },
+        {
+            date: "୨୪",
+            englishDate: 24,
+            festival: "ଶିବଚତୁର୍ଦ୍ଦଶୀ ଓ ବେଢ଼ା",
+            color: holidayColors[4],
+            isoDate: "2025-06-24T00:00:00Z"
+        },
+        {
+            date: "୨୫",
+            englishDate: 25,
+            festival: "ଅମାବାସ୍ୟା ଓ ହଳନିଷେଧ",
+            color: holidayColors[4],
+            isoDate: "2025-06-25T00:00:00Z"
+        },
+        {
+            date: "୨୬",
+            englishDate: 26,
+            festival: "ନେତ୍ରୋତ୍ସବ, ନବଯୌବନ ଦର୍ଶନ, ଉଭାଯାତ୍ରା, ଚନ୍ଦ୍ରଦର୍ଶନ ଓ ପୂଜା",
+            color: holidayColors[4],
+            isoDate: "2025-06-26T00:00:00Z"
         }
     ] as HolidayType[],
     
+
     subhadina: {
         bibaha: [1, 3, 6, 8, 10, 13, 15, 17],
         brataGhara: [1, 6, 10, 15],
     } as SubhadinaType,
     moonIcons: {
-        1: 'Purnima',
-        14: 'Amavasya',
-        20: 'KrishnaPakshaEkadashi',
-        25: 'ShuklaPakshaEkadashi',
+        1: 'ShuklaPakshaPratipada',
+        6: 'ShuklaPakshaEkadashi',
+        11: 'Purnima',
+        25: 'Amavasya',
+        30: 'KrishnaPakshaEkadashi',
     },
+
 };

@@ -10,8 +10,7 @@ import { septemberData } from './september';
 import { octoberData } from './october';
 import { novemberData } from './november';
 import { decemberData } from './december';
-
-export type MonthData = typeof januaryData;
+import { MonthData } from '@/types/month';
 
 export const monthsData: Record<number, MonthData> = {
     1: januaryData,

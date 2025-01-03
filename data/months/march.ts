@@ -54,24 +54,139 @@ export const marchData = {
             date: "୧୪",
             englishDate: 14,
             festival: "ଦୋଳ ପୂର୍ଣ୍ଣିମା - Dola Purnima",
-            color: holidayColors[0]
+            color: holidayColors[0],
+            isoDate: "2025-03-14T00:00:00Z"
         },
         {
             date: "୩୧",
             englishDate: 31,
             festival: "ଇଦୁଲ ଫିତର - Eid-ul-Fitr",
-            color: holidayColors[1]
+            color: holidayColors[1],
+            isoDate: "2025-03-31T00:00:00Z"
+        },
+        {
+            date: "୦୧",
+            englishDate: 1,
+            festival: "ଦ୍ଵିତୀ୭ାର ଚନ୍ଦ୍ର ଦର୍ଶନ, ଶରଣ ଶେଷ",
+            color: holidayColors[4],
+            isoDate: "2025-03-01T00:00:00Z"
+        },
+        {
+            date: "୦୨",
+            englishDate: 2,
+            festival: "ରମଜାନ ମାସ ଆରମ୍ଭ",
+            color: holidayColors[4],
+            isoDate: "2025-03-02T00:00:00Z"
+        },
+        {
+            date: "୦୯",
+            englishDate: 9,
+            festival: "ଫଗୁ ଦଶମୀ",
+            color: holidayColors[4],
+            isoDate: "2025-03-09T00:00:00Z"
+        },
+        {
+            date: "୧୦",
+            englishDate: 10,
+            festival: "ପାପ ନାଶିନୀ ଏକାଦଶୀ, ହଳ ନିଷେଧ",
+            color: holidayColors[4],
+            isoDate: "2025-03-10T00:00:00Z"
+        },
+        {
+            date: "୧୧",
+            englishDate: 11,
+            festival: "ସାମାନ୍ୟ ଗୋବିନ୍ଦ ଦ୍ୱାଦଶୀ ସ୍ନାନ",
+            color: holidayColors[4],
+            isoDate: "2025-03-11T00:00:00Z"
+        },
+        {
+            date: "୧୩",
+            englishDate: 13,
+            festival: "ବରାହ ଦୋଳ, ରାଜାଗ୍ନି ଓ ଓଳକଣା ମେଳଣ",
+            color: holidayColors[4],
+            isoDate: "2025-03-13T00:00:00Z"
+        },
+        // {
+        //     date: "୧୪",
+        //     englishDate: 14,
+        //     festival: "ମୀନ ସଂକ୍ରାନ୍ତି, ଦୋଳ ପୂର୍ଣ୍ଣିମା, ଶ୍ରୀ ଚୈତନ୍ୟ ଦେବଙ୍କ ଜନ୍ମୋତ୍ସବ ଓ ହଳ ନିଷେଧ",
+        //     color: holidayColors[4],
+        //     isoDate: "2025-03-14T00:00:00Z"
+        // },
+        {
+            date: "୧୫",
+            englishDate: 15,
+            festival: "ହୋଲି ଉତ୍ସବ",
+            color: holidayColors[4],
+            isoDate: "2025-03-15T00:00:00Z"
+        },
+        {
+            date: "୧୯",
+            englishDate: 19,
+            festival: "ପଞ୍ଚୁଦୋଳ",
+            color: holidayColors[4],
+            isoDate: "2025-03-19T00:00:00Z"
+        },
+        {
+            date: "୨୦",
+            englishDate: 20,
+            festival: "ସ୍କନ୍ଧ ଷଷ୍ଠୀ",
+            color: holidayColors[4],
+            isoDate: "2025-03-20T00:00:00Z"
+        },
+        {
+            date: "୨୪",
+            englishDate: 24,
+            festival: "ଶରଣ ଆରମ୍ଭ",
+            color: holidayColors[4],
+            isoDate: "2025-03-24T00:00:00Z"
+        },
+        {
+            date: "୨୫",
+            englishDate: 25,
+            festival: "ପାପମୋଚନୀ ଏକାଦଶୀ, ତାରାତାରିଣୀ ଯାତ୍ରା, ହଳ ନିଷେଧ",
+            color: holidayColors[4],
+            isoDate: "2025-03-25T00:00:00Z"
+        },
+        {
+            date: "୨୭",
+            englishDate: 27,
+            festival: "ବାରୁଣୀ ସ୍ନାନ",
+            color: holidayColors[4],
+            isoDate: "2025-03-27T00:00:00Z"
+        },
+        {
+            date: "୨୮",
+            englishDate: 28,
+            festival: "ସ୍ନୁହୀ ଚତୁର୍ଦ୍ଦଶୀ, ଶିବ ଚତୁର୍ଦ୍ଦଶୀ ଓ ବେଢ଼ା, ଚନ୍ଦ୍ରକ୍ଷୟ, ନିଶିପାଳନ, ଶରଣ ଶେଷ, ସବେ-କଦର, (ପୂର୍ବରାତ୍ରି) ହଳ ନିଷେଧ",
+            color: holidayColors[4],
+            isoDate: "2025-03-28T00:00:00Z"
+        },
+        {
+            date: "୨୯",
+            englishDate: 29,
+            festival: "ମଧୁ ଅମାବାସ୍ୟା, ବାସନ୍ତୀକ, ଶ୍ରୀ ଦୁର୍ଗྫྷାଦେବ୍ୟୋ ନବবିନାତ୍ମକ ପୂଜାରମ୍ଭ",
+            color: holidayColors[4],
+            isoDate: "2025-03-29T00:00:00Z"
+        },
+        {
+            date: "୩୦",
+            englishDate: 30,
+            festival: "ଦ୍ଵିତୀ୭ାର ଚନ୍ଦ୍ର ଦର୍ଶନ, ତେଲୁଗୁ ନୂତନବର୍ଷ ସୃଷ୍ଟି ଆରମ୍ଭ ଦିବସ ଓ ସମ୍ବତ ୨୦୮୨ ପ୍ରବେଶ",
+            color: holidayColors[4],
+            isoDate: "2025-03-30T00:00:00Z"
         }
     ] as HolidayType[],
+
 
     subhadina: {
         bibaha: [2, 3, 5, 7, 9, 12, 14, 16],
         brataGhara: [2, 5, 7, 14],
     } as SubhadinaType,
     moonIcons: {
-        1: 'Purnima',
-        14: 'Amavasya',
-        20: 'KrishnaPakshaEkadashi',
-        25: 'ShuklaPakshaEkadashi',
-    }
-}; 
+        14: 'Purnima',
+        29: 'Amavasya',
+        25: 'KrishnaPakshaEkadashi',
+        10: 'ShuklaPakshaEkadashi',
+    },
+};

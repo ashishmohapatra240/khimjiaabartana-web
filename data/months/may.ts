@@ -55,14 +55,149 @@ export const mayData = {
         {
             date: "୦୧",
             englishDate: 1,
+            isoDate: "2025-05-01",
             festival: "ଶ୍ରମିକ ଦିବସ - Labour Day",
             color: holidayColors[0]
         },
         {
             date: "୨୬",
             englishDate: 26,
+            isoDate: "2025-05-26",
             festival: "ସାବିତ୍ରୀ ବ୍ରତ - Sabitri Brata",
             color: holidayColors[1]
+        },
+        {
+            date: "୦୨",
+            englishDate: 2,
+            isoDate: "2025-05-02",
+            festival: "ଜଗଦ୍ ଗୁରୁ ଆଦି ଶଙ୍କରାଚାର୍ଯ୍ୟଙ୍କ ଜୟନ୍ତୀ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୩",
+            englishDate: 3,
+            isoDate: "2025-05-03",
+            festival: "ରାମାନୁଚାର୍ଯ୍ୟଙ୍କ ଜୟନ୍ତୀ, ଶନିଶ୍ଚର ମହାଯଜ୍ଞ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୫",
+            englishDate: 5,
+            isoDate: "2025-05-05",
+            festival: "ନିଳାଦ୍ରୀ ମହୋଦୟାଷ୍ଟମୀ, ସୀତା ନବମୀ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୮",
+            englishDate: 8,
+            isoDate: "2025-05-08",
+            festival: "ମୋହିନୀ ଏକାଦଶୀ, ଲକ୍ଷ୍ମୀନାରାୟଣ ଏକାଦଶୀ ବ୍ରତ ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୧",
+            englishDate: 11,
+            isoDate: "2025-05-11",
+            festival: "ନୃସିଂହ ଜନ୍ମ ଚତୁର୍ଦ୍ଦଶୀ ଉପବାସ, ଶିବ ଓ ବେଢ଼ା ପରିକ୍ରମା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୨",
+            englishDate: 12,
+            isoDate: "2025-05-12",
+            festival: "ଚନ୍ଦନ ପୂର୍ଣ୍ଣିମା, ଚନ୍ଦ୍ରପୂଜା, ବୁଦ୍ଧ ଜୟନ୍ତୀ, ବୈଶାଖ ବ୍ରତ ସମାପନ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୪",
+            englishDate: 14,
+            isoDate: "2025-05-14",
+            festival: "ମାସାନ୍ତ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୫",
+            englishDate: 15,
+            isoDate: "2025-05-15",
+            festival: "ବୃଷ ସଂକ୍ରାନ୍ତି, ବୃହସ୍ପତି ସଞ୍ଚାର ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୭",
+            englishDate: 17,
+            isoDate: "2025-05-17",
+            festival: "ଶରଣ ଆରମ୍ଭ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୯",
+            englishDate: 19,
+            isoDate: "2025-05-19",
+            festival: "ଶ୍ରୀକ୍ଷେତ୍ରେ ଭଉଁରୀ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୦",
+            englishDate: 20,
+            isoDate: "2025-05-20",
+            festival: "ଉତ୍କଳେ ଭଉଁରୀ ଓ ଶ୍ରୀକ୍ଷେତ୍ରେ ହଳଦୀ ପାଣି",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୨",
+            englishDate: 22,
+            isoDate: "2025-05-22",
+            festival: "ଶରଣ ଶେଷ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୩",
+            englishDate: 23,
+            isoDate: "2025-05-23",
+            festival: "ଜଳକ୍ରୀଡା ଏକାଦଶୀ ଉପବାସ ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୫",
+            englishDate: 25,
+            isoDate: "2025-05-25",
+            festival: "ଶିବ ଚତୁର୍ଦ୍ଦଶୀ ଉପବାସ ଓ ବେଢ଼ା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୭",
+            englishDate: 27,
+            isoDate: "2025-05-27",
+            festival: "ଜ୍ୟେଷ୍ଠ ଅମାବାସ୍ୟା, ଗୋସହସ୍ରୀ ସ୍ନାନ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୮",
+            englishDate: 28,
+            isoDate: "2025-05-28",
+            festival: "ଚନ୍ଦ୍ର ଦର୍ଶନ, ପୂଜା ଓ ଉପବାସ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୯",
+            englishDate: 29,
+            isoDate: "2025-05-29",
+            festival: "ରମ୍ଭା ତୃତୀୟା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୩୦",
+            englishDate: 30,
+            isoDate: "2025-05-30",
+            festival: "ଉମା ଚତୁର୍ଥୀ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୩୧",
+            englishDate: 31,
+            isoDate: "2025-05-31",
+            festival: "ଶିବ ବିବାହ",
+            color: holidayColors[4]
         }
     ] as HolidayType[],
 
@@ -71,9 +206,9 @@ export const mayData = {
         brataGhara: [2, 7, 11, 16],
     } as SubhadinaType,
     moonIcons: {
-        1: 'Purnima',
-        14: 'Amavasya',
-        20: 'KrishnaPakshaEkadashi',
-        25: 'ShuklaPakshaEkadashi',
-    }
+        12: 'Purnima',
+        27: 'Amavasya',
+        23: 'KrishnaPakshaEkadashi',
+        8: 'ShuklaPakshaEkadashi',
+    },
 }; 

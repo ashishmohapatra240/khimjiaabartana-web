@@ -55,43 +55,190 @@ export const augustData = {
         {
             date: "୦୯",
             englishDate: 9,
+            isoDate: "2025-08-09T00:00:00Z",
             festival: "ରକ୍ଷ୍ୟା ବନ୍ଧନ - Rakshya Bandhana",
             color: holidayColors[0]
         },
         {
             date: "୧୫",
             englishDate: 15,
+            isoDate: "2025-08-15T00:00:00Z",
             festival: "ଶ୍ରୀକୃଷ୍ଣ ଜନ୍ମାଷ୍ଟମୀ - Janmastami",
             color: holidayColors[1]
         },
         {
             date: "୧୫",
             englishDate: 15,
+            isoDate: "2025-08-15T00:00:00Z",
             festival: "ସ୍ୱାଧୀନତା ଦିବସ - Independence Day",
             color: holidayColors[2]
         },
         {
             date: "୨୭",
             englishDate: 27,
+            isoDate: "2025-08-27T00:00:00Z",
             festival: "ଶ୍ରୀଗଣେଶ ଚତୁର୍ଥୀ - Ganesha Chaturthi",
             color: holidayColors[3]
         },
         {
             date: "୨୮",
             englishDate: 28,
+            isoDate: "2025-08-28T00:00:00Z",
             festival: "ନୂଆଖାଇ - Nuakhai",
             color: holidayColors[0]
+        },
+        {
+            date: "୦୪",
+            englishDate: 4,
+            isoDate: "2025-08-04T00:00:00Z",
+            festival: "ଶ୍ରୀମନ୍ଦିରେ ଝୁଲଣ ଯାତ୍ରା ଆରମ୍ବ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୫",
+            englishDate: 5,
+            isoDate: "2025-08-05T00:00:00Z",
+            festival: "ପୁତ୍ରଦା ଏକାଦଶୀ, ପବିତ୍ରାଧିବାସ, ହଳନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୬",
+            englishDate: 6,
+            isoDate: "2025-08-06T00:00:00Z",
+            festival: "ବିଷ୍ଣୁ ପବିତ୍ରାରୋପଣ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୭",
+            englishDate: 7,
+            isoDate: "2025-08-07T00:00:00Z",
+            festival: "ଶିବ ପବିତ୍ରାରୋପଣ ଚତୁର୍ଦ୍ଦଶୀ, ଶରଣ ଆରମ୍ଭ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୦୮",
+            englishDate: 8,
+            isoDate: "2025-08-08T00:00:00Z",
+            festival: "ପୂର୍ଣ୍ଣିମାର ଚନ୍ଦ୍ର ଆରମ୍ବ",
+            color: holidayColors[4]
+        },
+        // {
+        //     date: "୦୯",
+        //     englishDate: 9,
+        //     isoDate: "2025-08-09T00:00:00Z",
+        //     festival: "ଗହ୍ମାପୂର୍ଣ୍ଣିମା, ଶ୍ରୀ ବଳଭଦ୍ର ଜନ୍ମ, ରାକ୍ଷୀବନ୍ଧନ",
+        //     color: holidayColors[4]
+        // },
+        {
+            date: "୧୦",
+            englishDate: 10,
+            isoDate: "2025-08-10T00:00:00Z",
+            festival: "ଶ୍ରୀମନ୍ଦିରେ ଝୁଲଣ ଶେଷ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୨",
+            englishDate: 12,
+            isoDate: "2025-08-12T00:00:00Z",
+            festival: "ଅଙ୍ଗଭେଟ ତୃତୀୟା, ଶରଣ ଶେଷ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୩",
+            englishDate: 13,
+            isoDate: "2025-08-13T00:00:00Z",
+            festival: "ବୁଧିବାମନ ଓଷା, ଶ୍ରୀମନ୍ଦିରେ ରେଖାପଞ୍ଚମୀ ଓ ଗୃହିଣାଂରକ୍ଷା ପଞ୍ଚମୀ",
+            color: holidayColors[4]
+        },
+        // {
+        //     date: "୧୫",
+        //     englishDate: 15,
+        //     isoDate: "2025-08-15T00:00:00Z",
+        //     festival: "ଶ୍ରୀକୃଷ୍ଣ ଜନ୍ମାଷ୍ଟମୀ, ୭୯ତମ ସ୍ୱାଧୀନତା ଦିବସ, ଶ୍ରୀ ଅରବିନ୍ଦଙ୍କ ଜୟନ୍ତୀ, ଶ୍ରୀ ଶ୍ରୀ ଆଦିତ୍ୟ ନାରାୟଣ ଦାସଙ୍କ ଜନ୍ମୋତ୍ସବ",
+        //     color: holidayColors[4]
+        // },
+        {
+            date: "୧୭",
+            englishDate: 17,
+            isoDate: "2025-08-17T00:00:00Z",
+            festival: "ଖୁଦୁରୁକୁଣୀ ଓଷା, ସିଂହ ସଂକ୍ରାନ୍ତି ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୧୯",
+            englishDate: 19,
+            isoDate: "2025-08-19T00:00:00Z",
+            festival: "କାଳୀୟଦଳନ ଏକାଦଶୀ ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୧",
+            englishDate: 21,
+            isoDate: "2025-08-21T00:00:00Z",
+            festival: "ଶିବଚତୁର୍ଦ୍ଦଶୀ ପୋବାସ ଓ ବେଢ଼ା",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୨",
+            englishDate: 22,
+            isoDate: "2025-08-22T00:00:00Z",
+            festival: "ଗୃହାଣାଂ ସପ୍ତପୁରୀ ଭୋଗ, ଚନ୍ଦ୍ରକ୍ଷୟ ନିଶିପାଳନ ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୩",
+            englishDate: 23,
+            isoDate: "2025-08-23T00:00:00Z",
+            festival: "ଅମାବାସ୍ୟା, ଶ୍ରୀ ମନ୍ଦିରେ ସପ୍ତପୁରୀ ଭୋଗ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୪",
+            englishDate: 24,
+            isoDate: "2025-08-24T00:00:00Z",
+            festival: "ଚନ୍ଦ୍ର ଦର୍ଶନ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୬",
+            englishDate: 26,
+            isoDate: "2025-08-26T00:00:00Z",
+            festival: "ବାଲିତୃତୀୟା, ଗୌରୀବ୍ରତ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୨୯",
+            englishDate: 29,
+            isoDate: "2025-08-29T00:00:00Z",
+            festival: "ଷଷ୍ଠୀ ଓଷା, ସୋମନାଥ ବ୍ରତାରମ୍ଭ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୩୦",
+            englishDate: 30,
+            isoDate: "2025-08-30T00:00:00Z",
+            festival: "ଲଳିତା ସପ୍ତମୀ, କୁକକୁଟି ବ୍ରତ",
+            color: holidayColors[4]
+        },
+        {
+            date: "୩୧",
+            englishDate: 31,
+            isoDate: "2025-08-31T00:00:00Z",
+            festival: "ଶ୍ରୀରାଧାଷ୍ଟମୀ, ଦୁର୍ବାଷ୍ଟମୀ, ଶ୍ରୀ ଦୁର୍ଗାଦେବ୍ୟୋ ଶୟନୋତ୍ସବ",
+            color: holidayColors[4]
         }
     ] as HolidayType[],
-    
+
+
     subhadina: {
         bibaha: [1, 3, 6, 8, 10, 13, 15, 17],
         brataGhara: [1, 6, 10, 15],
     } as SubhadinaType,
     moonIcons: {
-        1: 'Purnima',
-        14: 'Amavasya',
-        20: 'KrishnaPakshaEkadashi',
-        25: 'ShuklaPakshaEkadashi',
+        1: 'ShuklaPakshaPratipada',
+        6: 'ShuklaPakshaEkadashi',
+        10: 'Purnima',
+        24: 'Amavasya',
+        29: 'KrishnaPakshaEkadashi',
     },
 }; 

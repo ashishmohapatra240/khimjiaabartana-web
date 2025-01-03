@@ -55,30 +55,112 @@ export const decemberData = {
             date: "୦୪",
             englishDate: 4,
             festival: "ମାଣବସା ଶେଷ ଗୁରୁବାର - Sesa Manabasa Gurubara",
-            color: holidayColors[0]
+            color: holidayColors[0],
+            isoDate: "2025-12-04T00:00:00Z"
         },
         {
             date: "୧୯",
             englishDate: 19,
             festival: "ବକୁଳ ଅମାବାସ୍ୟା - Bakula Amabasya",
-            color: holidayColors[1]
+            color: holidayColors[1],
+            isoDate: "2025-12-19T00:00:00Z"
         },
         {
             date: "୨୫",
             englishDate: 25,
             festival: "ବଡ଼ ଦିନ - Christmas Day",
-            color: holidayColors[2]
+            color: holidayColors[2],
+            isoDate: "2025-12-25T00:00:00Z"
+        },
+        {
+            date: "୦୧",
+            englishDate: 1,
+            festival: "ମୋକ୍ଷଦା ଏକାଦଶୀ ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4],
+            isoDate: "2025-12-01T00:00:00Z"
+        },
+        {
+            date: "୦୨",
+            englishDate: 2,
+            festival: "ବ୍ୟଞ୍ଜନ ଦ୍ୱାଦଶୀ",
+            color: holidayColors[4],
+            isoDate: "2025-12-02T00:00:00Z"
+        },
+        {
+            date: "୦୩",
+            englishDate: 3,
+            festival: "ଅନଙ୍ଗ ତ୍ରୟୋଦଶୀ, ଗୀତା ଜୟନ୍ତୀ, ପାଷାଣ ଚତୁର୍ଦ୍ଦଶୀ, ଶିବ ଓ ବେଢ଼ା ପରିକ୍ରମା",
+            color: holidayColors[4],
+            isoDate: "2025-12-03T00:00:00Z"
+        },
+        {
+            date: "୦୬",
+            englishDate: 6,
+            festival: "ଦାଣ୍ଡ ପହଁରା ଓ ବାଟ ଓଷା",
+            color: holidayColors[4],
+            isoDate: "2025-12-06T00:00:00Z"
+        },
+        {
+            date: "୧୫",
+            englishDate: 15,
+            festival: "ସଫଳା ଏକାଦଶୀ ଉପବାସ ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4],
+            isoDate: "2025-12-15T00:00:00Z"
+        },
+        {
+            date: "୧୬",
+            englishDate: 16,
+            festival: "ଧନୁ ସଂକ୍ରାନ୍ତି, ପହିଲି ଭୋଗ ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4],
+            isoDate: "2025-12-16T00:00:00Z"
+        },
+        {
+            date: "୧୮",
+            englishDate: 18,
+            festival: "ଶିବଚତୁର୍ଦ୍ଦଶୀ ଓ ଉପବାସ",
+            color: holidayColors[4],
+            isoDate: "2025-12-18T00:00:00Z"
+        },
+        {
+            date: "୨୧",
+            englishDate: 21,
+            festival: "ଦ୍ଵିତୀୟାର ଚନ୍ଦ୍ରଦର୍ଶନ",
+            color: holidayColors[4],
+            isoDate: "2025-12-21T00:00:00Z"
+        },
+        {
+            date: "୨୨",
+            englishDate: 22,
+            festival: "ଶରଣ ଆରମ୍ଭ",
+            color: holidayColors[4],
+            isoDate: "2025-12-22T00:00:00Z"
+        },
+        {
+            date: "୨୬",
+            englishDate: 26,
+            festival: "ଶରଣ ଶେଷ",
+            color: holidayColors[4],
+            isoDate: "2025-12-26T00:00:00Z"
+        },
+        {
+            date: "୩୦",
+            englishDate: 30,
+            festival: "ଶାମ୍ବଦଶମୀ, ପୁତ୍ରଦା ଏକାଦଶୀ ଉପବାସ ଓ ହଳ ନିଷେଧ",
+            color: holidayColors[4],
+            isoDate: "2025-12-30T00:00:00Z"
         }
     ] as HolidayType[],
     
+
     subhadina: {
         bibaha: [1, 3, 6, 8, 10, 13, 15, 17],
         brataGhara: [1, 6, 10, 15],
     } as SubhadinaType,
     moonIcons: {
-        1: 'Purnima',
-        14: 'Amavasya',
-        20: 'KrishnaPakshaEkadashi',
-        25: 'ShuklaPakshaEkadashi',
-    }
+        4: 'Purnima',
+        19: 'Amavasya',
+        15: 'KrishnaPakshaEkadashi',
+        1: 'ShuklaPakshaEkadashi',
+    },
+
 };
