@@ -60,14 +60,14 @@ export const augustData = {
             color: holidayColors[0]
         },
         {
-            date: "୧୫",
+            date: "୧୫-1",
             englishDate: 15,
             isoDate: "2025-08-15T00:00:00Z",
             festival: "ଶ୍ରୀକୃଷ୍ଣ ଜନ୍ମାଷ୍ଟମୀ - Janmastami",
             color: holidayColors[1]
         },
         {
-            date: "୧୫",
+            date: "୧୫-2",
             englishDate: 15,
             isoDate: "2025-08-15T00:00:00Z",
             festival: "ସ୍ୱାଧୀନତା ଦିବସ - Independence Day",
