@@ -1,8 +1,16 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // images: {
+  //   domains: ["raw.githubusercontent.com"],
+  // },
   images: {
-    domains: ["cdn.jsdelivr.net"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        pathname: '**',
+      },
+    ],
   },
 };
 
