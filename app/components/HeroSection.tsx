@@ -3,7 +3,7 @@ import { archivo, notoSansOriya } from "../fonts";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#bd1621] h-screen px-6 sm:px-8 md:px-12 lg:px-16 py-8 flex flex-col items-start justify-start">
+    <section className="bg-[#aa030e] h-screen px-6 sm:px-8 md:px-12 lg:px-16 py-8 flex flex-col items-start justify-start">
       {/* Logos Section */}
       <div className="flex items-center justify-start gap-6 sm:gap-8 mb-12 sm:mb-16">
         <div className="relative w-32 sm:w-40 h-20 sm:h-24">
@@ -31,25 +31,29 @@ export default function HeroSection() {
         <p
           className={`${notoSansOriya.className} text-khimji-gold text-base sm:text-lg lg:text-xl`}
         >
-          ଖିମଜି ଜୁଏଲର୍ସ, ୧୯୩୬ ରେ ପ୍ରତିଷ୍ଠିତ, ଓଡ଼ିଶାର ଅଗ୍ରଣୀ ଜୁଏଲରି ହାଉସ୍ ଯାହା
-          ଏହାର ଅତି ସୁନ୍ଦର କାରିଗରୀ ଏବଂ ଚିରନ୍ତନ ଡିଜାଇନ୍ ପାଇଁ ପରିଚିତ। ଆଠ ଦଶନ୍ଧିରୁ
-          ଅଧିକ ସମୟର ଐତିହ୍ୟ ସହିତ, ଆମେ ପରମ୍ପରା ଏବଂ ନବୀକରଣକୁ ପାଳନ କରୁଥିବା
-          ମାଷ୍ଟରପିସ୍ ସୃଷ୍ଟି କରିବା ଜାରି ରଖିଛୁ।
+          ରୀତିନୀତି, ବାର ମାସରେ ତେରଉ ପର୍ବ ହେଉଛି ଆମ ଓଡ଼ିଆ ସଂସ୍କୃତି ଏବଂ ଓଡ଼ିଆର ମାନକ।
+          ଏହି ଚିରାନ୍ବିତ ପାରମ୍ପରିକ ତାଲିକାକୁ ଆଜି ଓଡ଼ିଆ ଜୀବନ ଦା ଭାଗ ଭାବରେ ପାଇବା ଏକ
+          ଅଭିଜ୍ଞତା। ସମୟର ଚିତ୍ରପଟରେ ଆମ ଚିରା ମାନବତା ଚକ୍ର ଏକ ଅତୁଳନୀୟ ସମ୍ପଦ ହେଉଛି
+          ଯାହା ପାରମ୍ପରିକ ଏବଂ ଆଧୁନିକତାର ମିଶ୍ରଣରେ ଜୀବନର ଗତିଶୀଳତାକୁ ମଧ୍ୟ ପ୍ରଦର୍ଶନ
+          କରେ।
         </p>
         <p className="font-archivoExpanded text-khimji-gold text-base sm:text-lg lg:text-xl">
-          Khimji Jewellers, established in 1936, is Odisha&apos;s premier
-          jewelry house known for its exquisite craftsmanship and timeless
-          designs. With a legacy spanning over eight decades, we continue to
-          create masterpieces that celebrate tradition and innovation.
+          Rituals and the tradition of &quot;13 festivals in twelve months&quot;
+          capture the heart of Odia culture and identity, with the Odia Panji
+          (astronomical almanac/calendar) acting as the keeper of these
+          cherished customs. &apos;Aabartana&apos; reflects the essence of change,
+          renewal, and continuity in life while preserving our glorious
+          heritage.
         </p>
       </div>
 
       {/* Button Section */}
-      <button
-        className={`${archivo.className} mt-12 sm:mt-16 px-8 sm:px-10 md:px-12 py-3 sm:py-4 bg-khimji-gold text-khimji-red font-medium text-sm sm:text-base md:text-lg uppercase hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap`}
+      <a
+        href="/calendar"
+        className={`${archivo.className} mt-12 sm:mt-16 px-8 sm:px-10 md:px-12 py-3 sm:py-4 bg-[#CBA20E] text-khimji-red font-medium text-sm sm:text-base md:text-lg uppercase hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap`}
       >
         Explore Khimji Aabartana 2025
-      </button>
+      </a>
     </section>
   );
 }
