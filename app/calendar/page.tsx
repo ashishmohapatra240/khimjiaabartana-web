@@ -220,7 +220,7 @@ export default function CalendarPage() {
             HOME
           </Link>
           <Image
-            src="/images/khimji-logo.png"
+            src="https://raw.githubusercontent.com/ashishmohapatra240/khimjiaabartana-web/khimji-main/public/static/images/khimji-logo.png"
             alt="Khimji Logo"
             width={100}
             height={33}
