@@ -31,19 +31,31 @@ export default function HeroSection() {
         <p
           className={`${notoSansOriya.className} text-khimji-gold text-base sm:text-lg lg:text-xl`}
         >
-          ରୀତିନୀତି, ବାର ମାସରେ ତେରଉ ପର୍ବ ହେଉଛି ଆମ ଓଡ଼ିଆ ସଂସ୍କୃତି ଏବଂ ଓଡ଼ିଆର ମାନକ।
-          ଏହି ଚିରାନ୍ବିତ ପାରମ୍ପରିକ ତାଲିକାକୁ ଆଜି ଓଡ଼ିଆ ଜୀବନ ଦା ଭାଗ ଭାବରେ ପାଇବା ଏକ
-          ଅଭିଜ୍ଞତା। ସମୟର ଚିତ୍ରପଟରେ ଆମ ଚିରା ମାନବତା ଚକ୍ର ଏକ ଅତୁଳନୀୟ ସମ୍ପଦ ହେଉଛି
-          ଯାହା ପାରମ୍ପରିକ ଏବଂ ଆଧୁନିକତାର ମିଶ୍ରଣରେ ଜୀବନର ଗତିଶୀଳତାକୁ ମଧ୍ୟ ପ୍ରଦର୍ଶନ
-          କରେ।
+          ଜାନିଜାତ, ବାର ମାସରେ ତେର ପର୍ବ ହେଉଛି ଆମ ଓଡ଼ିଆ ସଂସ୍କୃତି ଏବଂ ଓଡ଼ିଆତ୍ୱର ମାନକ
+          । ଏହି ତିଥି ବାରର ବାହକ ଆମ ଓଡ଼ିଆ ପଞ୍ଜିକା ବା ପାଞ୍ଜି । ସମୟର ଚିତ୍ରପଟରେ ଆମ
+          ତିଥି ବାରର ମହତ୍ୱର ରଙ୍ଗ ଧିରେ ଧିରେ ଲିଭି ଯାଉଥିବା ସମୟରେ, ଓଡ଼ିଆ ପଞ୍ଜିକାକୁ ଏକ
+          ଆଧୁନିକ ରୂପ ଦେଇ, ନୂତନ ପିଢ଼ିଙ୍କୁ ଅବଗତ କରାଇବା ଏବଂ ଆମ ଗୌରବମୟ ପରମ୍ପରାକୁ
+          ବଞ୍ଚାଇ ରଖିବା ପାଇଁ &apos;ଖିମଜୀ&apos; ପରିବାର ତରଫରୁ ଏକ କ୍ଷୁଦ୍ର ପ୍ରୟାସ ହେଉଛି
+          &apos;ଆବର୍ତ୍ତନ&apos; ।
+          <br />
+          ‘ଆବର୍ତ୍ତନ’ ଅର୍ଥାତ ଏକ କେନ୍ଦ୍ରୀୟ ଘୂର୍ଣ୍ଣନ ଗତି ଏବଂ ସମୟର ଚିରସ୍ଥାୟୀ ଚକ୍ରର
+          ଏକ ପ୍ରତୀକ । ପ୍ରତ୍ୟେକ ଦିନ, ସପ୍ତାହ ଏବଂ ମାସ ଏକ ଆବର୍ତ୍ତନ ଗତିରେ ଘୂରିବୁଲୁଛି,
+          ଯାହା ଜୀବନର ନିରନ୍ତର ଗତିକୁ ପ୍ରତିଫଳିତ କରେ । ପରିବର୍ତ୍ତନ, ନବୀକରଣ ଏବଂ
+          ନିରନ୍ତରତା ଜୀବନର ଏକ ସାରା ।
         </p>
         <p className="font-archivoExpanded text-khimji-gold text-base sm:text-lg lg:text-xl">
           Rituals and the tradition of &quot;13 festivals in twelve months&quot;
           capture the heart of Odia culture and identity, with the Odia Panji
           (astronomical almanac/calendar) acting as the keeper of these
-          cherished customs. &apos;Aabartana&apos; reflects the essence of change,
-          renewal, and continuity in life while preserving our glorious
-          heritage.
+          cherished customs. As time passes and the significance of these dates
+          fades, the Khimji Group takes a humble step forward, in the form of
+          ‘Aabartana’, to preserve our glorious heritage by adapting the
+          traditional Odia Panji to the sensibilities of the current generation.
+          <br />
+          ‘Aabartana’ refers to a central revolving motion, a symbol of the
+          eternal cycle of time. Every day, week, and month revolves like a
+          wheel, reflecting the continuous flow of life. It embodies the essence
+          of change, renewal, and continuity in life.
         </p>
       </div>
 
