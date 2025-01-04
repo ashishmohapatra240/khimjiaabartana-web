@@ -40,12 +40,12 @@ function Calendar({
   const renderDateDetails = (date: number, details?: DateDetailsType) => {
     if (!details) return null;
 
-    const holiday = currentMonthHolidays.find(h => h.englishDate === date);
+    const holiday = currentMonthHolidays.find((h) => h.englishDate === date);
 
     return (
-      <div 
-        className="text-[10px] leading-tight mt-1 font-NotoSansOriya text-left"
-        style={{ color: holiday?.color || '#4B5563' }}
+      <div
+        className="text-[8px] sm:text-[10px] leading-tight mt-0.5 sm:mt-1 font-NotoSansOriya text-left line-clamp-2 sm:line-clamp-3"
+        style={{ color: holiday?.color || "#4B5563" }}
       >
         {details.significance}
       </div>
@@ -54,25 +54,26 @@ function Calendar({
 
   const formatDay = (date: Date) => {
     const dayNumber = date.getDate();
-    const details = dateDetails?.find(d => d.date === dayNumber.toString());
+    const details = dateDetails?.find((d) => d.date === dayNumber.toString());
     const moonType = moonIcons?.[dayNumber] as MoonType;
-    const holiday = holidays?.find(h => h.englishDate === dayNumber);
+    const holiday = holidays?.find((h) => h.englishDate === dayNumber);
 
     return (
-      <div className="relative flex flex-col items-start p-1">
-        <span 
-          className="text-4xl"
-          style={{ color: holiday?.color || 'inherit' }}
+      <div className="relative flex flex-col items-start p-0.5 sm:p-1 h-full">
+        <span
+          className="text-lg sm:text-2xl lg:text-4xl"
+          style={{ color: holiday?.color || "inherit" }}
         >
           {formatDateWithLeadingZero(dayNumber)}
         </span>
         {moonType && moonData[moonType]?.icon && (
-          <div className="absolute top-2 right-14">
+          <div className="absolute top-2 right-6 sm:top-2 sm:right-16 md:top-2 md:right-12">
             <Image
               src={moonData[moonType].icon}
               alt={moonType}
-              width={12}
-              height={12}
+              width={8}
+              height={8}
+              className="w-2 h-2 sm:w-3 sm:h-3 lg:w-4 lg:h-4"
             />
           </div>
         )}
@@ -84,10 +85,10 @@ function Calendar({
   return (
     <DayPicker
       showOutsideDays={showOutsideDays}
-      className={cn("p-6", className)}
+      className={cn("p-2 sm:p-4 lg:p-6", className)}
       classNames={{
-        months: "flex flex-col space-y-4",
-        month: "space-y-4",
+        months: "flex flex-col space-y-2 sm:space-y-4",
+        month: "space-y-2 sm:space-y-4",
         caption: "hidden",
         caption_label: "hidden",
         nav: "flex items-center gap-1",
@@ -98,10 +99,13 @@ function Calendar({
         table: "w-full border-collapse",
         head_row: "flex w-full",
         head_cell:
-          "text-black w-[14.28%] text-xl font-bold text-center uppercase",
-        row: "flex w-full mt-2",
-        cell: "relative w-[14.28%] text-center text-sm p-0 relative focus-within:relative focus-within:z-20",
-        day: "h-24 w-full p-1 font-normal text-3xl hover:bg-gray-100 rounded-none text-black",
+          "text-black w-[14.28%] text-sm sm:text-base lg:text-xl font-bold text-left pl-2",
+        row: "flex w-full mt-1 sm:mt-2",
+        cell: "relative w-[14.28%] text-center text-xs sm:text-sm p-0 relative focus-within:relative focus-within:z-20",
+        day: cn(
+          "h-12 sm:h-16 lg:h-24 w-full p-0.5 sm:p-1 font-normal",
+          "text-sm sm:text-lg lg:text-3xl hover:bg-gray-100 rounded-none text-black"
+        ),
         day_selected: "bg-gray-100",
         day_today: "text-black font-bold",
         day_outside: "hidden",
@@ -118,6 +122,9 @@ function Calendar({
       }}
       formatters={{
         formatDay,
+        formatWeekdayName: (day: Date) => {
+          return day.toLocaleDateString('en-US', { weekday: 'narrow' });
+        },
       }}
       {...props}
     />
