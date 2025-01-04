@@ -3,7 +3,7 @@ import { archivo, notoSansOriya } from "../fonts";
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#aa030e] h-screen px-6 sm:px-8 md:px-12 lg:px-16 py-8 flex flex-col items-start justify-start">
+    <section className="bg-[#aa030e] h-screen px-6 sm:px-8 md:px-12 lg:px-16 py-2 sm:py-4 flex flex-col items-start justify-start">
       {/* Logos Section */}
       <div className="flex items-center justify-start gap-6 sm:gap-8 mb-12 sm:mb-16">
         <div className="relative w-32 sm:w-40 h-20 sm:h-24">
@@ -27,24 +27,20 @@ export default function HeroSection() {
       </div>
 
       {/* Text Section */}
-      <div className="max-w-2xl lg:max-w-3xl text-left space-y-4 sm:space-y-2">
+      <div className="max-w-2xl lg:max-w-3xl text-left space-y-2 sm:space-y-2">
         <p
-          className={`${notoSansOriya.className} text-khimji-gold text-base sm:text-lg lg:text-xl`}
+          className={`${notoSansOriya.className} text-khimji-gold text-xs sm:text-sm lg:text-base`}
         >
           ଜାନିଜାତ, ବାର ମାସରେ ତେର ପର୍ବ ହେଉଛି ଆମ ଓଡ଼ିଆ ସଂସ୍କୃତି ଏବଂ ଓଡ଼ିଆତ୍ୱର ମାନକ
           । ଏହି ତିଥି ବାରର ବାହକ ଆମ ଓଡ଼ିଆ ପଞ୍ଜିକା ବା ପାଞ୍ଜି । ସମୟର ଚିତ୍ରପଟରେ ଆମ
-          ତିଥି ବାରର ମହତ୍ୱର ରଙ୍ଗ ଧିରେ ଧିରେ ଲିଭି ଯାଉଥିବା ସମୟରେ, ଓଡ଼ିଆ ପଞ୍ଜିକାକୁ ଏକ
-          ଆଧୁନିକ ରୂପ ଦେଇ, ନୂତନ ପିଢ଼ିଙ୍କୁ ଅବଗତ କରାଇବା ଏବଂ ଆମ ଗୌରବମୟ ପରମ୍ପରାକୁ
-          ବଞ୍ଚାଇ ରଖିବା ପାଇଁ &apos;ଖିମଜୀ&apos; ପରିବାର ତରଫରୁ ଏକ କ୍ଷୁଦ୍ର ପ୍ରୟାସ
+          ତିଥି ବାରର ମହତ୍ୟର ରଙ୍ଗ ଧିରେ ଧିରେ ଲିଭି ଯାଉଥିବା ସମୟରେ, ଓଡ଼ିଆ ପଞ୍ଜିକାକୁ ଏକ
+          ଆଧୁନିକ ରୂପ ଦେଇ, ନୂତନ ପିଢ଼ିଙ୍କ୭ ଅବଗତ କରାଇବା ଏବଂ ଆମ ଗୌରବମୟ ପରମ୍ପରାକୁ
+          ବଞ୍ଚାଇ ରଖିବା ପାଇଁ &apos;ଖିମଜୀ&apos; ପରିବାର ତରଫରୁ ଏକ କ୍ଷୁଦ୍ର ପ୍ର୭ାସ
           ହେଉଛି &apos;ଆବର୍ତ୍ତନ&apos; ।
           <br />
           <br />
-          ‘ଆବର୍ତ୍ତନ’ ଅର୍ଥାତ ଏକ କେନ୍ଦ୍ରୀୟ ଘୂର୍ଣ୍ଣନ ଗତି ଏବଂ ସମୟର ଚିରସ୍ଥାୟୀ ଚକ୍ରର
-          ଏକ ପ୍ରତୀକ । ପ୍ରତ୍ୟେକ ଦିନ, ସପ୍ତାହ ଏବଂ ମାସ ଏକ ଆବର୍ତ୍ତନ ଗତିରେ ଘୂରିବୁଲୁଛି,
-          ଯାହା ଜୀବନର ନିରନ୍ତର ଗତିକୁ ପ୍ରତିଫଳିତ କରେ । ପରିବର୍ତ୍ତନ, ନବୀକରଣ ଏବଂ
-          ନିରନ୍ତରତା ଜୀବନର ଏକ ସାରା ।
         </p>
-        <p className="font-archivoExpanded text-khimji-gold text-base sm:text-lg lg:text-xl">
+        <p className="font-archivoExpanded text-khimji-gold text-xs sm:text-sm lg:text-base">
           Rituals and the tradition of &quot;13 festivals in twelve months&quot;
           capture the heart of Odia culture and identity, with the Odia Panji
           (astronomical almanac/calendar) acting as the keeper of these
@@ -54,10 +50,6 @@ export default function HeroSection() {
           traditional Odia Panji to the sensibilities of the current generation.
           <br />
           <br />
-          ‘Aabartana’ refers to a central revolving motion, a symbol of the
-          eternal cycle of time. Every day, week, and month revolves like a
-          wheel, reflecting the continuous flow of life. It embodies the essence
-          of change, renewal, and continuity in life.
         </p>
       </div>
 
