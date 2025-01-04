@@ -35,8 +35,9 @@ export default function HeroSection() {
           । ଏହି ତିଥି ବାରର ବାହକ ଆମ ଓଡ଼ିଆ ପଞ୍ଜିକା ବା ପାଞ୍ଜି । ସମୟର ଚିତ୍ରପଟରେ ଆମ
           ତିଥି ବାରର ମହତ୍ୱର ରଙ୍ଗ ଧିରେ ଧିରେ ଲିଭି ଯାଉଥିବା ସମୟରେ, ଓଡ଼ିଆ ପଞ୍ଜିକାକୁ ଏକ
           ଆଧୁନିକ ରୂପ ଦେଇ, ନୂତନ ପିଢ଼ିଙ୍କୁ ଅବଗତ କରାଇବା ଏବଂ ଆମ ଗୌରବମୟ ପରମ୍ପରାକୁ
-          ବଞ୍ଚାଇ ରଖିବା ପାଇଁ &apos;ଖିମଜୀ&apos; ପରିବାର ତରଫରୁ ଏକ କ୍ଷୁଦ୍ର ପ୍ରୟାସ ହେଉଛି
-          &apos;ଆବର୍ତ୍ତନ&apos; ।
+          ବଞ୍ଚାଇ ରଖିବା ପାଇଁ &apos;ଖିମଜୀ&apos; ପରିବାର ତରଫରୁ ଏକ କ୍ଷୁଦ୍ର ପ୍ରୟାସ
+          ହେଉଛି &apos;ଆବର୍ତ୍ତନ&apos; ।
+          <br />
           <br />
           ‘ଆବର୍ତ୍ତନ’ ଅର୍ଥାତ ଏକ କେନ୍ଦ୍ରୀୟ ଘୂର୍ଣ୍ଣନ ଗତି ଏବଂ ସମୟର ଚିରସ୍ଥାୟୀ ଚକ୍ରର
           ଏକ ପ୍ରତୀକ । ପ୍ରତ୍ୟେକ ଦିନ, ସପ୍ତାହ ଏବଂ ମାସ ଏକ ଆବର୍ତ୍ତନ ଗତିରେ ଘୂରିବୁଲୁଛି,
@@ -51,6 +52,7 @@ export default function HeroSection() {
           fades, the Khimji Group takes a humble step forward, in the form of
           ‘Aabartana’, to preserve our glorious heritage by adapting the
           traditional Odia Panji to the sensibilities of the current generation.
+          <br />
           <br />
           ‘Aabartana’ refers to a central revolving motion, a symbol of the
           eternal cycle of time. Every day, week, and month revolves like a
