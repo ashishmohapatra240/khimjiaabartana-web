@@ -250,10 +250,10 @@ export default function CalendarPage() {
                 </h4>
                 <div className="flex items-center">
                   <div className="text-xl sm:text-2xl">
-                    <span className="mr-2 font-bold text-2xl sm:text-3xl font-NotoSansOriya">
+                    <span className="mr-2 font-bold text-2xl sm:text-3xl font-odia">
                       {currentMonthData.odia.first}
                     </span>
-                    <span className="font-bold text-2xl sm:text-3xl font-NotoSansOriya">
+                    <span className="font-bold text-2xl sm:text-3xl font-odia">
                       {currentMonthData.odia.second}
                     </span>
                   </div>
@@ -392,7 +392,7 @@ export default function CalendarPage() {
               transition={{ delay: 0.2 }}
             >
               <motion.h3
-                className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 font-NotoSansOriya text-[#221F20]"
+                className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 font-odia text-[#221F20]"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
@@ -425,7 +425,7 @@ export default function CalendarPage() {
                       {holiday.date.split("-")[0]}
                     </span>
                     <span
-                      className="font-NotoSansOriya text-xs sm:text-sm text-black"
+                      className="font-odia text-xs sm:text-sm text-black"
                       style={{ color: holiday.color }}
                     >
                       {holiday.festival}
@@ -441,7 +441,7 @@ export default function CalendarPage() {
               transition={{ delay: 0.4 }}
             >
               <motion.h3
-                className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 font-NotoSansOriya text-[#221F20]"
+                className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 font-odia text-[#221F20]"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
@@ -456,12 +456,12 @@ export default function CalendarPage() {
                 transition={{ staggerChildren: 0.1, delayChildren: 0.3 }}
               >
                 <motion.div variants={listItemVariants}>
-                  <p className="font-NotoSansOriya text-base sm:text-lg text-gray-600 text-sm text-[#aa030e]">
+                  <p className="font-odia text-base sm:text-lg text-gray-600 text-sm text-[#aa030e]">
                     ବିବାହ: {currentMonthData.subhadina.bibaha.join(", ")}
                   </p>
                 </motion.div>
                 <motion.div variants={listItemVariants}>
-                  <p className="font-NotoSansOriya text-base sm:text-lg text-gray-600 text-sm text-[#aa030e]">
+                  <p className="font-odia text-base sm:text-lg text-gray-600 text-sm text-[#aa030e]">
                     ବ୍ରତ ଗୃହ: {currentMonthData.subhadina.brataGhara.join(", ")}
                   </p>
                 </motion.div>

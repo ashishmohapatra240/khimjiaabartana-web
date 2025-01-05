@@ -73,7 +73,19 @@ const config: Config = {
         archivoExtraCondensed: "var(--font-archivo)", // ExtraCondensed
         archivoSemiCondensed: "var(--font-archivo)", // SemiCondensed
         archivoSemiExpanded: "var(--font-archivo)", // SemiExpanded
-        'noto-sans-oriya': ['var(--font-noto-sans-oriya)'],
+        'odia': ['Noto Sans Oriya', 'sans-serif'],
+        'odia-bold': ['Noto Sans Oriya Bold', 'sans-serif'],
+        'odia-regular': ['Noto Sans Oriya Regular', 'sans-serif'],
+        'odia-light': ['Noto Sans Oriya Light', 'sans-serif'],
+        'odia-medium': ['Noto Sans Oriya Medium', 'sans-serif'],
+        'odia-thin': ['Noto Sans Oriya Thin', 'sans-serif'],
+        'odia-extra-light': ['Noto Sans Oriya ExtraLight', 'sans-serif'],
+        'odia-extra-condensed': ['Noto Sans Oriya ExtraCondensed', 'sans-serif'],
+        'odia-extra-expanded': ['Noto Sans Oriya ExtraExpanded', 'sans-serif'],
+        'odia-semi-condensed': ['Noto Sans Oriya SemiCondensed', 'sans-serif'],
+        'odia-semi-expanded': ['Noto Sans Oriya SemiExpanded', 'sans-serif'],
+        'odia-condensed': ['Noto Sans Oriya Condensed', 'sans-serif'],
+        'odia-expanded': ['Noto Sans Oriya Expanded', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
