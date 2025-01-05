@@ -249,10 +249,11 @@ export default function CalendarPage() {
                   {currentMonthData.name}
                 </h4>
                 <div className="flex items-center">
-                  <div className="text-xl sm:text-2xl">
+                  <div className="text-xl sm:text-2xl flex items-end">
                     <span className="mr-2 font-bold text-2xl sm:text-3xl font-odia">
                       {currentMonthData.odia.first}
                     </span>
+                    <span className="w-2 h-2 bg-white rounded-full inline-block mb-2 mr-1"></span>
                     <span className="font-bold text-2xl sm:text-3xl font-odia">
                       {currentMonthData.odia.second}
                     </span>
@@ -268,7 +269,7 @@ export default function CalendarPage() {
                 </span>
               </div>
 
-              <h3 className="text-[#C5A265] text-xl sm:text-2xl font-odia">
+              <h3 className="text-[#C5A265] text-xl sm:text-2xl font-odia font-bold mb-2">
                 {currentMonthData.festival.name}
               </h3>
               <p className="text-white/80 leading-relaxed text-xs sm:text-sm font-odia">
@@ -344,23 +345,40 @@ export default function CalendarPage() {
               <button
                 onClick={handlePreviousMonth}
                 disabled={isPreviousDisabled}
-                className={`px-4 sm:px-6 py-2 sm:py-3 text-sm bg-[#CBA20E] text-white shadow-lg transition-all duration-200 ${isPreviousDisabled ? "opacity-50 cursor-not-allowed" : "hover:bg-[#B39154] hover:scale-105 hover:shadow-xl"}`}
-                style={{ fontFamily: 'Archivo, sans-serif', textTransform: 'uppercase' }}
+                className={`px-4 sm:px-6 py-2 sm:py-3 text-sm bg-[#CBA20E] text-white shadow-lg transition-all duration-200 ${
+                  isPreviousDisabled
+                    ? "opacity-50 cursor-not-allowed"
+                    : "hover:bg-[#B39154] hover:scale-105 hover:shadow-xl"
+                }`}
+                style={{
+                  fontFamily: "Archivo, sans-serif",
+                  textTransform: "uppercase",
+                }}
               >
                 Previous
               </button>
               <button
                 onClick={handleCurrentMonth}
                 className="px-4 sm:px-6 py-2 sm:py-3 bg-[#CBA20E] text-white shadow-lg transition-all duration-200 hover:bg-[#B39154] hover:scale-105"
-                style={{ fontFamily: 'Archivo, sans-serif', textTransform: 'uppercase' }}
+                style={{
+                  fontFamily: "Archivo, sans-serif",
+                  textTransform: "uppercase",
+                }}
               >
                 <CalendarIcon className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
               <button
                 onClick={handleNextMonth}
                 disabled={isNextDisabled}
-                className={`px-4 sm:px-6 py-2 sm:py-3 text-sm bg-[#CBA20E] text-white shadow-lg transition-all duration-200 ${isNextDisabled ? "opacity-50 cursor-not-allowed" : "hover:bg-[#B39154] hover:scale-105"}`}
-                style={{ fontFamily: 'Archivo, sans-serif', textTransform: 'uppercase' }}
+                className={`px-4 sm:px-6 py-2 sm:py-3 text-sm bg-[#CBA20E] text-white shadow-lg transition-all duration-200 ${
+                  isNextDisabled
+                    ? "opacity-50 cursor-not-allowed"
+                    : "hover:bg-[#B39154] hover:scale-105"
+                }`}
+                style={{
+                  fontFamily: "Archivo, sans-serif",
+                  textTransform: "uppercase",
+                }}
               >
                 Next
               </button>
@@ -391,14 +409,22 @@ export default function CalendarPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <motion.h3
-                className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 font-odia text-[#221F20]"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-              >
-                ଛୁଟିଦିନ
-              </motion.h3>
+              <motion.div className="relative h-12 w-32">
+                <Image
+                  src="/images/subhadina.png"
+                  alt="Subhadina Background"
+                  fill
+                  className="object-contain"
+                />
+                <motion.h3
+                  className="absolute inset-0 flex items-center justify-center text-lg sm:text-xl font-bold font-odia text-white"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                >
+                  ଛୁଟିଦିନ
+                </motion.h3>
+              </motion.div>
               <motion.div
                 initial="initial"
                 animate="animate"
@@ -440,14 +466,22 @@ export default function CalendarPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <motion.h3
-                className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 font-odia text-[#221F20]"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-              >
-                ଶୁଭଦିନ
-              </motion.h3>
+              <motion.div className="relative h-12 w-32">
+                <Image
+                  src="/images/subhadina.png"
+                  alt="Subhadina Background"
+                  fill
+                  className="object-contain"
+                />
+                <motion.h3
+                  className="absolute inset-0 flex items-center justify-center text-lg sm:text-xl font-bold font-odia text-white"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                >
+                  ଶୁଭଦିନ
+                </motion.h3>
+              </motion.div>
               <motion.div
                 className="space-y-2 sm:space-y-2"
                 initial="initial"
@@ -456,13 +490,13 @@ export default function CalendarPage() {
                 transition={{ staggerChildren: 0.1, delayChildren: 0.3 }}
               >
                 <motion.div variants={listItemVariants}>
-                  <p className="font-odia text-base sm:text-lg text-gray-600 text-sm text-[#aa030e]">
+                  <p className="font-odia text-base sm:text-lg text-gray-600 text-sm text-khimji-red">
                     ବିବାହ: {currentMonthData.subhadina.bibaha.join(", ")}
                   </p>
                 </motion.div>
                 <motion.div variants={listItemVariants}>
-                  <p className="font-odia text-base sm:text-lg text-gray-600 text-sm text-[#aa030e]">
-                    ବ୍ରତ ଗୃହ: {currentMonthData.subhadina.brataGhara.join(", ")}
+                  <p className="font-odia text-base sm:text-lg text-gray-600 text-sm text-khimji-red">
+                    ବ୍ରତଘର: {currentMonthData.subhadina.brataGhara.join(", ")}
                   </p>
                 </motion.div>
               </motion.div>
