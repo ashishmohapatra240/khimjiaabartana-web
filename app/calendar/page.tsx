@@ -260,18 +260,18 @@ export default function CalendarPage() {
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">
-                <span className="text-xs sm:text-sm text-white/80 leading-relaxed">
+                <span className="text-xs sm:text-sm text-white/80 leading-relaxed font-odia">
                   ପ୍ରାରମ୍ଭ ତିଥି: {currentMonthData.dates.start}
                 </span>
-                <span className="text-xs sm:text-sm text-white/80 leading-relaxed">
+                <span className="text-xs sm:text-sm text-white/80 leading-relaxed font-odia">
                   ଶେଷ ତିଥି: {currentMonthData.dates.end}
                 </span>
               </div>
 
-              <h3 className="text-[#C5A265] text-xl sm:text-2xl">
+              <h3 className="text-[#C5A265] text-xl sm:text-2xl font-odia">
                 {currentMonthData.festival.name}
               </h3>
-              <p className="text-white/80 leading-relaxed text-xs sm:text-sm">
+              <p className="text-white/80 leading-relaxed text-xs sm:text-sm font-odia">
                 {currentMonthData.festival.description}
               </p>
             </div>

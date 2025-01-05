@@ -61,7 +61,7 @@ function Calendar({
     return (
       <div className="relative flex flex-col items-start p-0.5 sm:p-1 h-full">
         <span
-          className="text-lg sm:text-2xl lg:text-4xl"
+          className="text-lg sm:text-2xl lg:text-4xl font-odia-bold"
           style={{ color: holiday?.color || "inherit" }}
         >
           {formatDateWithLeadingZero(dayNumber)}
@@ -99,7 +99,7 @@ function Calendar({
         table: "w-full border-collapse",
         head_row: "flex w-full",
         head_cell:
-          "text-black w-[14.28%] text-sm sm:text-base lg:text-xl font-bold text-left pl-2",
+          "text-black w-[14.28%] text-sm sm:text-base lg:text-xl font-bold font-odia text-left pl-2",
         row: "flex w-full mt-1 sm:mt-2",
         cell: "relative w-[14.28%] text-center text-xs sm:text-sm p-0 relative focus-within:relative focus-within:z-20",
         day: cn(
