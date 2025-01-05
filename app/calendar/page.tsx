@@ -272,7 +272,7 @@ export default function CalendarPage() {
               <h3 className="text-[#C5A265] text-xl sm:text-2xl font-odia font-bold mb-2">
                 {currentMonthData.festival.name}
               </h3>
-              <p className="text-white/80 leading-relaxed text-xs sm:text-sm font-odia">
+              <p className="text-white/80 leading-relaxed text-xs sm:text-sm font-odia mb-8">
                 {currentMonthData.festival.description}
               </p>
             </div>
