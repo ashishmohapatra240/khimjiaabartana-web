@@ -44,7 +44,7 @@ function Calendar({
 
     return (
       <div
-        className="text-[8px] sm:text-[10px] leading-tight mt-0.5 sm:mt-1 font-NotoSansOriya text-left line-clamp-2 sm:line-clamp-3"
+        className="text-[8px] sm:text-[10px] leading-tight mt-0.5 sm:mt-1 font-odia text-left line-clamp-2 sm:line-clamp-3"
         style={{ color: holiday?.color || "#4B5563" }}
       >
         {details.significance}
@@ -67,7 +67,7 @@ function Calendar({
           {formatDateWithLeadingZero(dayNumber)}
         </span>
         {moonType && moonData[moonType]?.icon && (
-          <div className="absolute top-2 right-6 sm:top-2 sm:right-16 md:top-2 md:right-12">
+          <div className="absolute top-[10%] right-[45%] sm:top-[5%] sm:right-[30%] md:top-[5%] md:right-[40%]">
             <Image
               src={moonData[moonType].icon}
               alt={moonType}
