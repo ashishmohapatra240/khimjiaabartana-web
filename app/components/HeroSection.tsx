@@ -28,6 +28,7 @@ export default function HeroSection() {
 
       {/* Text Section */}
       <div className="max-w-2xl lg:max-w-3xl text-left space-y-2 sm:space-y-2">
+        {/* Odia Content */}
         <p
           className={`${notoSansOriya.className} text-khimji-gold text-xs sm:text-sm lg:text-base`}
         >
@@ -35,7 +36,18 @@ export default function HeroSection() {
           ଏହି ତିଥି ବାରର ବାହକ ଆମ ଓଡ଼ିଆ ପଞ୍ଜିକା ବା ପାଞ୍ଜି । ସମୟର ଚିତ୍ରପଟରେ ଆମ
           ତିଥି ବାରର ମହତ୍ୱର ରଙ୍ଗ ଧିରେ ଧିରେ ଲିଭି ଯାଉଥିବା ସମୟରେ, ଓଡ଼ିଆ ପଞ୍ଜିକାକୁ ଏକ
           ଆଧୁନିକ ରୂପ ଦେଇ, ନୂତନ ପିଢ଼ିଙ୍କୁ ଅବଗତ କରାଇବା ଏବଂ ଆମ ଗୌରବମୟ ପରମ୍ପରାକୁ
-          ବଞ୍ଚାଇ ରଖିବା ପାଇଁ 'ଖିମଜୀ' ପରିବାର ତରଫରୁ ଏକ କ୍ଷୁଦ୍ର ପ୍ରୟାସ ହେଉଛି ‘ଆବର୍ତ୍ତନ’ ।
+          ବଞ୍ଚାଇ ରଖିବା ପାଇଁ &apos;ଖିମଜୀ&apos; ପରିବାର ତରଫରୁ ଏକ କ୍ଷୁଦ୍ର ପ୍ରୟାସ ହେଉଛି &apos;ଆବର୍ତ୍ତନ&apos; ।
+          <br />
+          <br />
+          &apos;ଆବର୍ତ୍ତନ&apos; ଅର୍ଥାତ ଏକ କେନ୍ଦ୍ରୀୟ ଘୂର୍ଣ୍ଣନ ଗତି ଏବଂ ସମୟର ଚିରସ୍ଥାୟୀ ଚକ୍ରର
+          ଏକ ପ୍ରତୀକ । ପ୍ରତ୍ୟେକ ଦିନ, ସପ୍ତାହ ଏବଂ ମାସ ଏକ ଆବର୍ତ୍ତନ ଗତିରେ ଘୂରିବୁଲୁଛି,
+          ଯାହା ଜୀବନର ନିରନ୍ତର ଗତିକୁ ପ୍ରତିଫଳିତ କରେ । ପରିବର୍ତ୍ତନ, ନବୀକରଣ ଏବଂ
+          ନିରନ୍ତରତା ଜୀବନର ଏକ ସାର ।
+        </p>
+        <br />
+        {/* English Content */}
+        <p className="font-archivoExpanded text-khimji-gold text-xs sm:text-sm lg:text-base">
+          Rituals and the tradition of &quot;13 festivals in twelve months&quot; capture the heart of Odia culture and identity, with the Odia Panji (astronomical almanac/calendar) acting as the keeper of these cherished customs. As time passes and the significance of these dates fades, the Khimji Group takes a humble step forward, in the form of &apos;Aabartana&apos;, to preserve our glorious heritage by adapting the traditional Odia Panji to the sensibilities of the current generation.
           <br />
           <br />
         </p>
