@@ -31,23 +31,11 @@ export default function HeroSection() {
         <p
           className={`${notoSansOriya.className} text-khimji-gold text-xs sm:text-sm lg:text-base`}
         >
-          ଜାନିଜାତ, ବାର ମାସରେ ତେର ପର୍ବ ହେଉଛି ଆମ ଓଡ଼ିଆ ସଂସ୍କୃତି ଏବଂ ଓଡ଼ିଆତ୍ୱର ମାନକ
-          । ଏହି ତିଥି ବାରର ବାହକ ଆମ ଓଡ଼ିଆ ପଞ୍ଜିକା ବା ପାଞ୍ଜି । ସମୟର ଚିତ୍ରପଟରେ ଆମ
-          ତିଥି ବାରର ମହତ୍ୟର ରଙ୍ଗ ଧିରେ ଧିରେ ଲିଭି ଯାଉଥିବା ସମୟରେ, ଓଡ଼ିଆ ପଞ୍ଜିକାକୁ ଏକ
-          ଆଧୁନିକ ରୂପ ଦେଇ, ନୂତନ ପିଢ଼ିଙ୍କ୭ ଅବଗତ କରାଇବା ଏବଂ ଆମ ଗୌରବମୟ ପରମ୍ପରାକୁ
-          ବଞ୍ଚାଇ ରଖିବା ପାଇଁ &apos;ଖିମଜୀ&apos; ପରିବାର ତରଫରୁ ଏକ କ୍ଷୁଦ୍ର ପ୍ର୭ାସ
-          ହେଉଛି &apos;ଆବର୍ତ୍ତନ&apos; ।
-          <br />
-          <br />
-        </p>
-        <p className="font-archivoExpanded text-khimji-gold text-xs sm:text-sm lg:text-base">
-          Rituals and the tradition of &quot;13 festivals in twelve months&quot;
-          capture the heart of Odia culture and identity, with the Odia Panji
-          (astronomical almanac/calendar) acting as the keeper of these
-          cherished customs. As time passes and the significance of these dates
-          fades, the Khimji Group takes a humble step forward, in the form of
-          ‘Aabartana’, to preserve our glorious heritage by adapting the
-          traditional Odia Panji to the sensibilities of the current generation.
+          ଜାନିଜାତ, ବାର ମାସରେ ତେର ପର୍ବ ହେଉଛି ଆମ ଓଡ଼ିଆ ସଂସ୍କୃତି ଏବଂ ଓଡ଼ିଆତ୍ୱର ମାନକ ।
+          ଏହି ତିଥି ବାରର ବାହକ ଆମ ଓଡ଼ିଆ ପଞ୍ଜିକା ବା ପାଞ୍ଜି । ସମୟର ଚିତ୍ରପଟରେ ଆମ
+          ତିଥି ବାରର ମହତ୍ୱର ରଙ୍ଗ ଧିରେ ଧିରେ ଲିଭି ଯାଉଥିବା ସମୟରେ, ଓଡ଼ିଆ ପଞ୍ଜିକାକୁ ଏକ
+          ଆଧୁନିକ ରୂପ ଦେଇ, ନୂତନ ପିଢ଼ିଙ୍କୁ ଅବଗତ କରାଇବା ଏବଂ ଆମ ଗୌରବମୟ ପରମ୍ପରାକୁ
+          ବଞ୍ଚାଇ ରଖିବା ପାଇଁ 'ଖିମଜୀ' ପରିବାର ତରଫରୁ ଏକ କ୍ଷୁଦ୍ର ପ୍ରୟାସ ହେଉଛି ‘ଆବର୍ତ୍ତନ’ ।
           <br />
           <br />
         </p>
