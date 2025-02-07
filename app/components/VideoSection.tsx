@@ -6,12 +6,13 @@ export default function VideoSection() {
         loop
         muted
         playsInline
-        preload="metadata"
+        preload="auto"
         className="w-full absolute top-0 md:scale-[1.9] md:hover:scale-[2] duration-500
           object-cover object-top md:ml-80 md:mt-0 mt-36 md:py-0 scale-[1.4] "
+        key="video-player"
       >
-        <source src="/media/Phone.mp4" media="(max-width: 768px)" />
-        <source src="/media/Desktop.mp4" media="(min-width: 769px)" />
+        <source src="/media/Phone.mp4" type="video/mp4" media="(max-width: 768px)" />
+        <source src="/media/Desktop.mp4" type="video/mp4" media="(min-width: 769px)" />
       </video>
     </section>
   );
