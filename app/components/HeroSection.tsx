@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="md:bg-[#aa030e] bg-[#b81d18] md:h-screen px-6 sm:px-8 md:px-12 lg:px-16 py-2 sm:py-4 flex flex-col items-start justify-start">
       {/* Logos Section */}
-      <div className="flex items-center justify-start gap-6 sm:gap-8 mb-12 sm:mb-16">
+      <div className="flex items-center justify-start gap-6 sm:gap-8 mb-4 sm:mb-4">
         <div className="relative w-32 sm:w-40 h-20 sm:h-24">
           <Image
             src="https://raw.githubusercontent.com/ashishmohapatra240/khimjiaabartana-web/khimji-main/public/static/images/khimji-logo.png"
@@ -56,7 +56,7 @@ export default function HeroSection() {
       {/* Button Section */}
       <a
         href="/calendar"
-        className={`${archivo.className} mt-8 sm:mt-12 px-4 sm:px-6 md:px-8 py-2 sm:py-3 bg-[#CBA20E] text-khimji-red font-medium text-xs sm:text-sm md:text-base uppercase hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap`}
+        className={`${archivo.className} mt-4 sm:mt-6 px-4 sm:px-6 md:px-8 py-2 sm:py-3 bg-[#CBA20E] text-khimji-red font-medium text-xs sm:text-sm md:text-base uppercase hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap`}
       >
         Explore Khimji Aabartana 2025
       </a>
