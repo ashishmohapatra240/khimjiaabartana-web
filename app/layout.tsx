@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     siteName: "Khimji Aabartana",
     images: [
       {
-        url: "https://raw.githubusercontent.com/ashishmohapatra240/khimjiaabartana-web/khimji-main/public/images/og.png",
+        url: "https://raw.githubusercontent.com/ashishmohapatra240/khimjiaabartana-web/refs/heads/main/public/images/og.png",
         width: 1200,
         height: 630,
         alt: "Khimji Abartana OG Image",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Khimji Aabartana",
     description: "Digital Odia Calendar by Khimji",
     images: [
-      "https://raw.githubusercontent.com/ashishmohapatra240/khimjiaabartana-web/khimji-main/public/images/og.png",
+      "https://raw.githubusercontent.com/ashishmohapatra240/khimjiaabartana-web/refs/heads/main/public/images/og.png",
     ],
   },
 };
