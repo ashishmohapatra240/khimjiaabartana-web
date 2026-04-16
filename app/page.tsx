@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { archivo } from "./fonts";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -45,16 +46,18 @@ export default function Home() {
           >
             Khimji Aabartana
           </p>
-          <h1
-            className={`${archivo.className} text-3xl font-semibold uppercase tracking-[0.12em] text-white sm:text-5xl lg:text-6xl`}
+          <Button
+            asChild
+            size="lg"
+            className={`${archivo.className} mt-2 rounded-none bg-[#cca032] px-6 text-xs font-semibold uppercase tracking-[0.3em] text-khimji-red shadow-lg transition-transform hover:bg-[#cca032]/90 sm:px-8 sm:text-sm`}
           >
-            2026-27
-          </h1>
-          <p
-            className={`${archivo.className} text-base uppercase tracking-[0.45em] text-white sm:text-xl lg:text-2xl lg:tracking-[0.7em]`}
-          >
-            Coming Soon
-          </p>
+            <a
+              href="/static/Aabartana%202026-27.pdf"
+              download="Aabartana 2026-27.pdf"
+            >
+              Download Calendar
+            </a>
+          </Button>
         </div>
       </div>
     </main>
