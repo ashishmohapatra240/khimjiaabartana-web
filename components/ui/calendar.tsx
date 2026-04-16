@@ -1,10 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { DayPicker } from "react-day-picker";
+import { DayButton, DayPicker, type DayButtonProps } from "react-day-picker";
 import { cn, formatDateWithLeadingZero } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
 import { DateDetailsType, HolidayType } from "@/types/calendar";
 import Image from "next/image";
 import { moonData, MoonType } from "@/data/moon";
@@ -24,7 +22,10 @@ function Calendar({
   moonIcons,
   ...props
 }: CalendarProps) {
-  const currentMonth = props.month as Date;
+  const currentMonth = React.useMemo(
+    () => props.month ?? props.defaultMonth ?? new Date(),
+    [props.defaultMonth, props.month]
+  );
 
   const currentMonthHolidays = React.useMemo(() => {
     if (!currentMonth || !holidays) return [];
@@ -52,78 +53,80 @@ function Calendar({
     );
   };
 
-  const formatDay = (date: Date) => {
-    const dayNumber = date.getDate();
+  const CalendarDayButton = ({
+    day,
+    modifiers,
+    className: dayButtonClassName,
+    ...buttonProps
+  }: DayButtonProps) => {
+    const dayNumber = day.date.getDate();
     const details = dateDetails?.find((d) => d.date === dayNumber.toString());
     const moonType = moonIcons?.[dayNumber] as MoonType;
     const holiday = holidays?.find((h) => h.englishDate === dayNumber);
 
     return (
-      <div className="relative flex flex-col items-start p-0.5 sm:p-1 h-full">
-        <span
-          className="text-lg sm:text-2xl lg:text-4xl font-odia-bold"
-          style={{ color: holiday?.color || "inherit" }}
-        >
-          {formatDateWithLeadingZero(dayNumber)}
-        </span>
-        {moonType && moonData[moonType]?.icon && (
-          <div className="absolute top-[10%] right-[45%] sm:top-[5%] sm:right-[30%] md:top-[5%] md:right-[40%]">
-            <Image
-              src={moonData[moonType].icon}
-              alt={moonType}
-              width={8}
-              height={8}
-              className="w-2 h-2 sm:w-3 sm:h-3 lg:w-4 lg:h-4"
-            />
-          </div>
-        )}
-        {renderDateDetails(dayNumber, details)}
-      </div>
+      <DayButton
+        day={day}
+        modifiers={modifiers}
+        className={cn(dayButtonClassName)}
+        {...buttonProps}
+      >
+        <div className="relative flex h-full flex-col items-start p-0.5 sm:p-1">
+          <span
+            className="text-lg sm:text-2xl lg:text-4xl font-odia-bold"
+            style={{ color: holiday?.color || "inherit" }}
+          >
+            {formatDateWithLeadingZero(dayNumber)}
+          </span>
+          {moonType && moonData[moonType]?.icon && (
+            <div className="absolute top-[10%] right-[45%] sm:top-[5%] sm:right-[30%] md:top-[5%] md:right-[40%]">
+              <Image
+                src={moonData[moonType].icon}
+                alt={moonType}
+                width={8}
+                height={8}
+                className="w-2 h-2 sm:w-3 sm:h-3 lg:w-4 lg:h-4"
+              />
+            </div>
+          )}
+          {renderDateDetails(dayNumber, details)}
+        </div>
+      </DayButton>
     );
   };
 
   return (
     <DayPicker
       showOutsideDays={showOutsideDays}
+      hideNavigation
       className={cn("p-2 sm:p-4 lg:p-6", className)}
       classNames={{
         months: "flex flex-col space-y-2 sm:space-y-4",
         month: "space-y-2 sm:space-y-4",
-        caption: "hidden",
+        month_caption: "hidden",
         caption_label: "hidden",
-        nav: "flex items-center gap-1",
-        nav_button: cn(
-          buttonVariants({ variant: "ghost" }),
-          "h-8 w-8 p-0 opacity-50 hover:opacity-100"
-        ),
-        table: "w-full border-collapse",
-        head_row: "flex w-full",
-        head_cell:
+        month_grid: "w-full border-collapse",
+        weekdays: "flex w-full",
+        weekday:
           "text-black w-[14.28%] text-sm sm:text-base lg:text-xl font-bold font-odia text-left pl-2",
-        row: "flex w-full mt-1 sm:mt-2",
-        cell: "relative w-[14.28%] text-center text-xs sm:text-sm p-0 relative focus-within:relative focus-within:z-20",
-        day: cn(
-          "h-12 sm:h-16 lg:h-24 w-full p-0.5 sm:p-1 font-normal",
+        week: "flex w-full mt-1 sm:mt-2",
+        day: "relative w-[14.28%] text-center text-xs sm:text-sm p-0 align-top focus-within:relative focus-within:z-20",
+        day_button: cn(
+          "h-12 sm:h-16 lg:h-24 w-full p-0 font-normal",
           "text-sm sm:text-lg lg:text-3xl hover:bg-gray-100 rounded-none text-black"
         ),
-        day_selected: "bg-gray-100",
-        day_today: "text-black font-bold",
-        day_outside: "hidden",
-        day_disabled: "text-gray-400",
+        selected: "bg-gray-100",
+        today: "text-black font-bold",
+        outside: "hidden",
+        disabled: "text-gray-400",
         ...classNames,
       }}
       components={{
-        IconLeft: ({ ...props }) => (
-          <ChevronLeft className="h-4 w-4" {...props} />
-        ),
-        IconRight: ({ ...props }) => (
-          <ChevronRight className="h-4 w-4" {...props} />
-        ),
+        DayButton: CalendarDayButton,
       }}
       formatters={{
-        formatDay,
         formatWeekdayName: (day: Date) => {
-          return day.toLocaleDateString('en-US', { weekday: 'narrow' });
+          return day.toLocaleDateString("en-US", { weekday: "narrow" });
         },
       }}
       {...props}
