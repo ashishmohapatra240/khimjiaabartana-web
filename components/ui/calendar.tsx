@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { DayButton, DayPicker, type DayButtonProps } from "react-day-picker";
+import { DayPicker, type DayButtonProps } from "react-day-picker";
 import { cn, formatDateWithLeadingZero } from "@/lib/utils";
 import { DateDetailsType, HolidayType } from "@/types/calendar";
 import Image from "next/image";
@@ -38,17 +38,58 @@ function Calendar({
     });
   }, [currentMonth, holidays]);
 
-  const renderDateDetails = (date: number, details?: DateDetailsType) => {
-    if (!details) return null;
+  const parseLunarDay = (text?: string) => {
+    if (!text) return undefined;
 
+    const normalized = text.replace(/\s+/g, " ").trim();
+    const match = normalized.match(/^([0-9\u0B66-\u0B6F]+)/);
+
+    if (!match) return undefined;
+
+    const numeric = match[1]
+      .replace(/[\u0B66-\u0B6F]/g, (digit) =>
+        String(digit.charCodeAt(0) - 0x0b66)
+      );
+
+    const parsed = Number.parseInt(numeric, 10);
+    return Number.isNaN(parsed) ? undefined : parsed;
+  };
+
+  const inferMoonType = (details?: DateDetailsType) => {
+    if (!details?.significance) return undefined;
+
+    const significance = details.significance.replace(/\s+/g, "");
+    const lunarDay = parseLunarDay(details.significance);
+
+    if (significance.includes("ପୂର୍ଣ୍ଣିମା")) {
+      return "Purnima" as MoonType;
+    }
+
+    if (significance.includes("ଅମାବାସ୍ୟା")) {
+      return "Amavasya" as MoonType;
+    }
+
+    if (significance.includes("ଏକାଦଶୀ") && lunarDay) {
+      return (lunarDay <= 15
+        ? "ShuklaPakshaEkadashi"
+        : "KrishnaPakshaEkadashi") as MoonType;
+    }
+
+    return undefined;
+  };
+
+  const renderDateDetails = (date: number, details?: DateDetailsType) => {
     const holiday = currentMonthHolidays.find((h) => h.englishDate === date);
+    const detailText = details?.significance ?? holiday?.festival;
+
+    if (!detailText) return null;
 
     return (
       <div
-        className="text-[8px] sm:text-[10px] leading-tight mt-0.5 sm:mt-1 font-odia text-left line-clamp-2 sm:line-clamp-3"
+        className="mt-0.5 line-clamp-2 whitespace-pre-line text-left font-odia text-[8px] leading-tight sm:mt-1 sm:line-clamp-3 sm:text-[10px]"
         style={{ color: holiday?.color || "#4B5563" }}
       >
-        {details.significance}
+        {detailText}
       </div>
     );
   };
@@ -60,21 +101,40 @@ function Calendar({
     ...buttonProps
   }: DayButtonProps) => {
     const dayNumber = day.date.getDate();
-    const details = dateDetails?.find((d) => d.date === dayNumber.toString());
-    const moonType = moonIcons?.[dayNumber] as MoonType;
-    const holiday = holidays?.find((h) => h.englishDate === dayNumber);
+    const details = day.outside
+      ? undefined
+      : dateDetails?.find((d) => d.date === dayNumber.toString());
+    const moonType = day.outside
+      ? undefined
+      : ((moonIcons?.[dayNumber] as MoonType) ?? inferMoonType(details));
+    const holiday = day.outside
+      ? undefined
+      : currentMonthHolidays.find((h) => h.englishDate === dayNumber);
+    const buttonRef = React.useRef<HTMLButtonElement>(null);
+
+    React.useEffect(() => {
+      if (modifiers.focused) {
+        buttonRef.current?.focus();
+      }
+    }, [modifiers.focused]);
+
+    const nativeButtonProps = { ...buttonProps };
+    delete nativeButtonProps.children;
 
     return (
-      <DayButton
-        day={day}
-        modifiers={modifiers}
-        className={cn(dayButtonClassName)}
-        {...buttonProps}
+      <button
+        ref={buttonRef}
+        type="button"
+        className={cn(
+          dayButtonClassName,
+          "block appearance-none border-0 bg-transparent text-left shadow-none outline-none"
+        )}
+        {...nativeButtonProps}
       >
-        <div className="relative flex h-full flex-col items-start p-0.5 sm:p-1">
+        <div className="relative flex h-full w-full select-none flex-col items-start overflow-hidden p-1 text-black sm:p-1.5">
           <span
-            className="text-lg sm:text-2xl lg:text-4xl font-odia-bold"
-            style={{ color: holiday?.color || "inherit" }}
+            className="font-archivo text-lg font-semibold text-black sm:text-2xl lg:text-4xl"
+            style={{ color: holiday?.color || "#111827" }}
           >
             {formatDateWithLeadingZero(dayNumber)}
           </span>
@@ -91,7 +151,7 @@ function Calendar({
           )}
           {renderDateDetails(dayNumber, details)}
         </div>
-      </DayButton>
+      </button>
     );
   };
 
@@ -105,19 +165,20 @@ function Calendar({
         month: "space-y-2 sm:space-y-4",
         month_caption: "hidden",
         caption_label: "hidden",
-        month_grid: "w-full border-collapse",
-        weekdays: "flex w-full",
+        month_grid: "w-full table-fixed border-collapse",
+        weekdays: "",
+        weeks: "",
         weekday:
-          "text-black w-[14.28%] text-sm sm:text-base lg:text-xl font-bold font-odia text-left pl-2",
-        week: "flex w-full mt-1 sm:mt-2",
-        day: "relative w-[14.28%] text-center text-xs sm:text-sm p-0 align-top focus-within:relative focus-within:z-20",
+          "h-12 px-2 pb-3 text-left align-top text-sm font-bold text-black sm:h-14 sm:text-base lg:h-16 lg:text-xl",
+        week: "",
+        day: "relative h-16 p-0 align-top text-xs sm:h-20 sm:text-sm lg:h-28 focus-within:relative focus-within:z-20",
         day_button: cn(
-          "h-12 sm:h-16 lg:h-24 w-full p-0 font-normal",
-          "text-sm sm:text-lg lg:text-3xl hover:bg-gray-100 rounded-none text-black"
+          "h-full w-full rounded-none p-0 text-left font-normal align-top",
+          "text-sm text-black hover:bg-gray-100 sm:text-lg lg:text-3xl"
         ),
         selected: "bg-gray-100",
         today: "text-black font-bold",
-        outside: "hidden",
+        outside: "pointer-events-none opacity-0",
         disabled: "text-gray-400",
         ...classNames,
       }}

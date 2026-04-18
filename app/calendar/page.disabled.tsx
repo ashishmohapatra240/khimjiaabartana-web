@@ -9,8 +9,26 @@ import Link from "next/link";
 import { monthsData } from "@/data/months";
 import { Calendar } from "@/components/ui/calendar";
 
+const CALENDAR_START = new Date(2026, 3);
+const CALENDAR_END = new Date(2027, 2);
+const getMonthKey = (date: Date) => date.getFullYear() * 12 + date.getMonth();
+const monthIllustrations2026: Record<number, string> = {
+  4: "/images/2026/Aabartana%20Images-01.jpg",
+  5: "/images/2026/Aabartana%20Images-02.jpg",
+  6: "/images/2026/Aabartana%20Images-03.jpg",
+  7: "/images/2026/Aabartana%20Images-04.jpg",
+  8: "/images/2026/Aabartana%20Images-05.jpg",
+  9: "/images/2026/Aabartana%20Images-06.jpg",
+  10: "/images/2026/Aabartana%20Images-07.jpg",
+  11: "/images/2026/Aabartana%20Images-08.jpg",
+  12: "/images/2026/Aabartana%20Images-09.jpg",
+  1: "/images/2026/Aabartana%20Images-10.jpg",
+  2: "/images/2026/Aabartana%20Images-11.jpg",
+  3: "/images/2026/Aabartana%20Images-12.jpg",
+};
+
 export default function CalendarPageDisabled() {
-  const [currentMonth, setCurrentMonth] = useState<Date>(new Date(2025, 0));
+  const [currentMonth, setCurrentMonth] = useState<Date>(CALENDAR_START);
   const [direction, setDirection] = useState(0);
 
   const handlePreviousMonth = () => {
@@ -19,7 +37,7 @@ export default function CalendarPageDisabled() {
       currentMonth.getFullYear(),
       currentMonth.getMonth() - 1
     );
-    if (newDate.getFullYear() >= 2025) {
+    if (getMonthKey(newDate) >= getMonthKey(CALENDAR_START)) {
       setCurrentMonth(newDate);
     }
   };
@@ -30,21 +48,20 @@ export default function CalendarPageDisabled() {
       currentMonth.getFullYear(),
       currentMonth.getMonth() + 1
     );
-    if (newDate.getFullYear() <= 2025) {
+    if (getMonthKey(newDate) <= getMonthKey(CALENDAR_END)) {
       setCurrentMonth(newDate);
     }
   };
 
   const handleCurrentMonth = () => {
     setDirection(0);
-    setCurrentMonth(new Date(2025, 0));
+    setCurrentMonth(CALENDAR_START);
   };
 
   const currentMonthData = monthsData[currentMonth.getMonth() + 1];
   const isPreviousDisabled =
-    currentMonth.getFullYear() <= 2025 && currentMonth.getMonth() === 0;
-  const isNextDisabled =
-    currentMonth.getFullYear() >= 2025 && currentMonth.getMonth() === 11;
+    getMonthKey(currentMonth) === getMonthKey(CALENDAR_START);
+  const isNextDisabled = getMonthKey(currentMonth) === getMonthKey(CALENDAR_END);
 
   const currentMonthHolidays = useMemo(() => {
     if (!currentMonthData.holidays) return [];
@@ -57,8 +74,7 @@ export default function CalendarPageDisabled() {
       const holidayDate = new Date(holiday.isoDate);
       return (
         holidayDate.getMonth() === currentMonth.getMonth() &&
-        holidayDate.getFullYear() === currentMonth.getFullYear() &&
-        holidayDate.getFullYear() === 2025
+        holidayDate.getFullYear() === currentMonth.getFullYear()
       );
     });
   }, [currentMonth, currentMonthData.holidays]);
@@ -259,16 +275,11 @@ export default function CalendarPageDisabled() {
                   </div>
                 </div>
               </div>
-              <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
-                <span className="font-odia text-xs leading-relaxed text-white/80 sm:text-sm">
-                  ପ୍ରାରମ୍ଭ ତିଥି: {currentMonthData.dates.start}
-                </span>
-                <span className="font-odia text-xs leading-relaxed text-white/80 sm:text-sm">
-                  ଶେଷ ତିଥି: {currentMonthData.dates.end}
-                </span>
-              </div>
-
-              <h3 className="mb-2 font-odia text-xl font-bold text-[#C5A265] sm:text-2xl">
+              <p className="mb-4 max-w-xl whitespace-pre-line font-odia text-xs leading-relaxed text-white/80 sm:text-sm">
+                {currentMonthData.headerLine ??
+                  `ପ୍ରାରମ୍ଭ ତିଥି: ${currentMonthData.dates.start} ଶେଷ ତିଥି: ${currentMonthData.dates.end}`}
+              </p>
+              <h3 className="mb-3 font-odia text-xl font-bold text-[#C5A265] sm:text-2xl">
                 {currentMonthData.festival.name}
               </h3>
               <p className="mb-8 font-odia text-xs leading-relaxed text-white/80 sm:text-sm">
@@ -284,10 +295,10 @@ export default function CalendarPageDisabled() {
               exit="exit"
             >
               <Image
-                src={`/images/months/${currentMonthData.name.toLowerCase()}.png`}
+                src={monthIllustrations2026[currentMonth.getMonth() + 1]}
                 alt={`${currentMonthData.name} Illustration`}
-                width={280}
-                height={280}
+                width={420}
+                height={420}
                 className="h-full w-full object-contain"
               />
             </motion.div>
@@ -330,8 +341,8 @@ export default function CalendarPageDisabled() {
                   month={currentMonth}
                   className="w-full"
                   moonIcons={currentMonthData.moonIcons}
-                  startMonth={new Date(2025, 0)}
-                  endMonth={new Date(2025, 11)}
+                  startMonth={CALENDAR_START}
+                  endMonth={CALENDAR_END}
                 />
               </motion.div>
             </AnimatePresence>
@@ -460,40 +471,6 @@ export default function CalendarPageDisabled() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <motion.div className="relative h-12 w-32">
-                <Image
-                  src="/images/subhadina.png"
-                  alt="Subhadina Background"
-                  fill
-                  className="object-contain"
-                />
-                <motion.h3
-                  className="absolute inset-0 flex items-center justify-center font-odia text-lg font-bold text-white sm:text-xl"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5 }}
-                >
-                  ଶୁଭଦିନ
-                </motion.h3>
-              </motion.div>
-              <motion.div
-                className="space-y-2 sm:space-y-2"
-                initial="initial"
-                animate="animate"
-                exit="exit"
-                transition={{ staggerChildren: 0.1, delayChildren: 0.3 }}
-              >
-                <motion.div variants={listItemVariants}>
-                  <p className="font-odia text-sm text-base text-khimji-red text-gray-600 sm:text-lg">
-                    ବିବାହ: {currentMonthData.subhadina.bibaha.join(", ")}
-                  </p>
-                </motion.div>
-                <motion.div variants={listItemVariants}>
-                  <p className="font-odia text-sm text-base text-khimji-red text-gray-600 sm:text-lg">
-                    ବ୍ରତଘର: {currentMonthData.subhadina.brataGhara.join(", ")}
-                  </p>
-                </motion.div>
-              </motion.div>
             </motion.div>
           </motion.div>
         </AnimatePresence>

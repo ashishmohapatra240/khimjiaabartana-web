@@ -6,6 +6,7 @@ export interface MonthData {
         first: string;
         second: string;
     };
+    headerLine?: string;
     dates: {
         start: string;
         end: string;
