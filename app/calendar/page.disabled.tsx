@@ -236,7 +236,7 @@ export default function CalendarPageDisabled() {
             HOME
           </Link>
           <Image
-            src="/static/images/khimji-logo.png"
+            src="/images/khimji-logo.png"
             alt="Khimji Logo"
             width={100}
             height={33}

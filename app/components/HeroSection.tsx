@@ -8,7 +8,7 @@ export default function HeroSection() {
       <div className="flex items-center justify-start gap-6 sm:gap-8 mb-4 sm:mb-4">
         <div className="relative w-32 sm:w-40 h-20 sm:h-24">
           <Image
-            src="https://raw.githubusercontent.com/ashishmohapatra240/khimjiaabartana-web/khimji-main/public/static/images/khimji-logo.png"
+            src="/images/khimji-logo.png"
             alt="Khimji Logo"
             fill
             className="object-contain"
